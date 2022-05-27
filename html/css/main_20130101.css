@@ -1,0 +1,1437 @@
+html {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+body {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+div {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+span {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+applet {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+object {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+iframe {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h1 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h2 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h3 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h4 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h5 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+h6 {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+p {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+blockquote {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+pre {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+a {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+abbr {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+acronym {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+address {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+big {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+cite {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+code {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+del {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+dfn {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+em {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+font {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+img {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+ins {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+kbd {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+q {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+s {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+samp {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+small {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+strike {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+strong {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+sub {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+sup {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+tt {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+var {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+dl {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+dt {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+dd {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+ol {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+ul {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+li {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+fieldset {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+form {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+label {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+legend {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+table {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+caption {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+tbody {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+tfoot {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+thead {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+tr {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+th {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+td {
+	margin: 0px; padding: 0px; outline: 0px; border: 0px currentColor; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; vertical-align: baseline;
+}
+:focus {
+	outline: 0px;
+}
+ol {
+	list-style: none;
+}
+ul {
+	list-style: none;
+}
+strong {
+	font-weight: bold;
+}
+.clear {
+	line-height: 0; clear: both; font-size: 1px;
+}
+.clearfix::after {
+	height: 0px; clear: both; display: block; visibility: hidden; content: ".";
+}
+.clearfix {
+	display: inline-block;
+}
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+html {
+	height: 100%; text-align: left; font-size: 100%;
+}
+body {
+	color: rgb(93, 93, 93); font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(250, 251, 252);
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif; font-weight: normal;
+}
+h2 {
+	font-family: Arial, Helvetica, sans-serif; font-weight: normal;
+}
+h3 {
+	font-family: Arial, Helvetica, sans-serif; font-weight: normal;
+}
+h4 {
+	font-family: Arial, Helvetica, sans-serif; font-weight: normal;
+}
+h5 {
+	font-family: Arial, Helvetica, sans-serif; font-weight: normal;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none !important;
+}
+.last {
+	border: currentColor !important;
+}
+.left {
+	margin: 0px 20px 5px 0px; float: left !important;
+}
+.right {
+	margin: 0px 0px 20px 10px; float: right !important;
+}
+.no-margin {
+	margin: 0px !important;
+}
+em {
+	font-style: normal;
+}
+.img-left {
+	margin: 0px 10px 5px 0px; border: 5px solid rgb(224, 224, 224); float: left;
+}
+.img-right {
+	margin: 0px 0px 10px 10px; border: 5px solid rgb(224, 224, 224); float: right;
+}
+.no_bg {
+	
+}
+.cake-sql-log {
+	clear: both;
+}
+.cake-sql-log th {
+	background: rgb(94, 118, 160); padding: 0px 4px; height: 32px; text-align: center; color: white; font-weight: bold; vertical-align: middle; border-right-color: rgb(221, 221, 221); border-right-width: 1px; border-right-style: solid;
+}
+.cake-sql-log td {
+	padding: 4px; border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid;
+}
+.system-nav {
+	margin: 0px auto; padding: 10px 0px 4px; width: 1024px;
+}
+.system-nav-list {
+	float: right;
+}
+.system-nav-list li {
+	float: left; display: block;
+}
+.system-nav-list li a {
+	padding: 0px 8px; color: rgb(119, 119, 119); font-size: 11px; border-right-color: rgb(108, 123, 141); border-right-width: 1px; border-right-style: dotted; display: block;
+}
+.system-nav-list li a:hover {
+	color: rgb(85, 85, 85); text-decoration: underline !important;
+}
+.system-nav-list li.last a {
+	border: currentColor;
+}
+#wrapper {
+	background: url("../img/bg_wrapper.gif") no-repeat left top; margin: 0px auto; padding: 8px 8px 0px; width: 1024px; height: 800px; position: relative;
+}
+#wrapper-inner {
+	background-color: rgb(255, 255, 255);
+}
+#header {
+	background: url("../img/logo_alfa.gif") no-repeat left top; width: 1024px;
+}
+#header #flash-logo {
+	left: 20px; top: 35px; float: left; position: absolute;
+}
+#header .logo_txt {
+	left: 138px; top: 60px; float: left; position: relative;
+}
+#header-flash-main {
+	float: right;
+}
+#header-flash-main img {
+	float: left; display: block;
+}
+#ticker {
+	background: url("../img/bg_ticker.gif") no-repeat 99%; padding: 0px 20px 0px 0px; width: 500px; height: 29px; float: right; position: relative;
+}
+#ticker ul {
+	float: right;
+}
+#ticker ul li {
+	float: left; display: block;
+}
+#ticker ul li a {
+	color: rgb(114, 114, 114); font-weight: normal !important;
+}
+#ticker ul li a:hover {
+	text-decoration: underline !important;
+}
+.tickercontainer {
+	background: rgb(255, 255, 255); margin: 0px; padding: 0px; width: 498px; height: 29px; overflow: hidden; float: right; position: relative;
+}
+.tickercontainer .mask {
+	left: 10px; top: 8px; width: 486px; height: 29px; overflow: hidden; position: relative;
+}
+ul.newsticker {
+	font: bold 10px/normal Verdana; margin: 0px; padding: 0px; left: 750px; list-style-type: none; position: absolute; font-size-adjust: none; font-stretch: normal;
+}
+ul.newsticker li {
+	background: rgb(255, 255, 255); margin: 0px; padding: 0px; float: left;
+}
+ul.newsticker a {
+	font: bold 10px/normal Arial; margin: 0px 50px 0px 0px; padding: 0px; color: rgb(255, 0, 0); white-space: nowrap; font-size-adjust: none; font-stretch: normal;
+}
+ul.newsticker span {
+	margin: 0px 10px 0px 0px;
+}
+.ticker_fade {
+	margin: 0px; left: 10px; position: absolute; z-index: 999;
+}
+#nav {
+	background: url("../img/bg_nav.gif") repeat-x left top; width: 1024px; padding-bottom: 1px; border-bottom-color: rgb(199, 201, 203); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+#nav-list {
+	padding-right: 80px; float: right;
+}
+#nav-list li {
+	background: url("../img/bg_nav_list_a.gif") no-repeat right top; float: left; display: block;
+}
+#nav-list li a {
+	padding: 11px 16px; color: rgb(254, 254, 254); font-weight: bold; display: block;
+}
+#nav-list li a:hover {
+	background: url("../img/bg_nav_list_a_hover.gif") repeat-x left top;
+}
+#nav-list li.sfhover a {
+	background: url("../img/bg_nav_list_a_hover.gif") repeat-x left top;
+}
+#nav-list li.sfhover ul li a {
+	
+}
+#nav-list a.sub {
+	background: url("../img/bg_nav_list_a_sub.gif") no-repeat 3%; width: 147px; padding-left: 19px;
+}
+#nav-list li.sfhover a.sub {
+	background: url("../img/bg_nav_list_a_sub.gif") no-repeat 3% !important;
+}
+#nav-list li.sfhover a.sub:hover {
+	background: url("../img/bg_nav_list_a_sub.gif") no-repeat 3% rgb(67, 122, 154) !important;
+}
+#nav-list a.sub:hover {
+	background: url("../img/bg_nav_list_a_sub.gif") no-repeat 3% rgb(67, 122, 154) !important;
+}
+#nav-list li ul {
+	left: -999em; width: 170px; border-right-color: rgb(67, 122, 154); border-bottom-color: rgb(67, 122, 154); border-left-color: rgb(131, 174, 195); border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; position: absolute; z-index: 99; background-color: rgb(85, 144, 172);
+}
+#nav-list li ul li {
+	width: 170px; display: block;
+}
+#nav-list li ul li a {
+	padding: 5px; width: 160px; font-size: 12px; font-weight: normal; display: block;
+}
+#nav-list li ul li a:hover {
+	background: rgb(67, 122, 154) !important;
+}
+#nav-list li:hover ul {
+	left: auto; margin-left: -1px;
+}
+#nav-list li:hover ul {
+	left: auto; z-index: 99;
+}
+#nav-list li.sfhover ul {
+	left: auto; z-index: 99;
+}
+#nav-list li a:hover {
+	background: url("../img/bg_nav_list_a_hover.gif") repeat-x left top;
+}
+#nav-list li ul a:hover {
+	background: url("../img/bg_nav_list_a_hover.gif") repeat-x left top;
+}
+#nav-list :hover > a {
+	background: url("../img/bg_nav_list_a_hover.gif") repeat-x left top;
+}
+#nav-list ul ul :hover > a {
+	background: url("../img/bg_nav_list_a_hover.gif") repeat-x left top;
+}
+#nav-list li ul li ul {
+	border: currentColor !important; top: 0px; margin-left: -171px !important;
+}
+#nav li:hover ul ul {
+	left: -999em;
+}
+#nav li.sfhover ul ul {
+	left: -999em;
+}
+#nav li:hover ul {
+	left: auto;
+}
+#nav li li:hover ul {
+	left: auto;
+}
+#nav li.sfhover ul {
+	left: auto;
+}
+#nav li li.sfhover ul {
+	left: auto;
+}
+#nav-list li a:hover ul li ul li {
+	background: url("../img/bg_nav_list_a_sub.gif") no-repeat 3% rgb(67, 122, 154) !important;
+}
+#nav-list li ul a:hover {
+	background: url("../img/bg_nav_list_a_sub.gif") no-repeat 3% rgb(67, 122, 154) !important;
+}
+#nav-list li :hover > a {
+	background: url("../img/bg_nav_list_a_sub.gif") no-repeat 3% rgb(67, 122, 154) !important;
+}
+#nav-list ul ul :hover > a {
+	background: url("../img/bg_nav_list_a_sub.gif") no-repeat 3% rgb(67, 122, 154) !important;
+}
+#content {
+	background: url("../img/bg_content.jpg") no-repeat right top; width: 1024px; padding-top: 9px; float: left;
+}
+#primary-content {
+	width: 624px; padding-left: 9px; float: left; position: relative;
+}
+#primary-content .txt {
+	color: rgb(119, 119, 119); line-height: 16px;
+}
+#primary-content .txt a {
+	color: rgb(222, 57, 50); font-weight: bold; border-bottom-color: rgb(222, 57, 50); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+#primary-content .txt a:hover {
+	color: rgb(39, 106, 169);
+}
+#primary-content .txt ul {
+	padding-left: 8px; display: block;
+}
+#primary-content .txt ul li {
+	background: url("../img/blt_txt_ul.gif") no-repeat 7px; padding: 3px 0px 3px 24px; display: block;
+}
+#primary-content .txt ol {
+	list-style: decimal; padding-left: 8px; display: block;
+}
+#primary-content .txt ol li {
+	list-style: decimal inside !important; padding: 3px 0px 3px 6px;
+}
+#primary-content h2 {
+	color: rgb(139, 0, 0); font-size: 17px; font-weight: bold; margin-bottom: 10px; float: left; display: block;
+}
+#primary-content h2.inner {
+	width: 624px; padding-bottom: 9px; margin-top: 4px; border-bottom-color: rgb(139, 0, 0); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#primary-content span.news-date {
+	color: rgb(151, 151, 151); font-size: 14px; font-weight: bold;
+}
+#primary-content h3 {
+	color: rgb(143, 141, 141); font-size: 14px; font-weight: bold; margin-bottom: 10px;
+}
+#primary-content h4 {
+	color: rgb(119, 119, 119); font-size: 12px; font-weight: bold; margin-bottom: 10px;
+}
+#secondary-content {
+	width: 194px; padding-left: 9px; float: left;
+}
+#additional-content {
+	width: 179px; padding-left: 9px; float: left;
+}
+#quick_links {
+	width: 194px; margin-bottom: 9px; float: left;
+}
+#quick_links h2 {
+	background: url("../img/bg_quick_links_h2.gif") no-repeat left top; padding: 10px 13px 9px 0px; text-align: right; color: rgb(255, 255, 255); font-size: 11px; font-weight: bold; display: block;
+}
+#quick_links ul {
+	background: url("../img/bg_quick_links_div.gif") no-repeat left bottom; padding: 5px; width: 182px; text-align: right; float: left;
+}
+#quick_links ul li {
+	padding: 5px 5px 5px 0px; width: 172px; clear: both; float: right; display: block;
+}
+#quick_links ul li a {
+	color: rgb(255, 255, 255); clear: both; float: right;
+}
+#quick_links ul li a:hover {
+	text-decoration: underline !important;
+}
+#ads {
+	width: 194px; float: left;
+}
+#ads div {
+	width: 194px; margin-bottom: 9px; float: left;
+}
+#side-nav {
+	width: 194px; margin-bottom: 9px; float: left;
+}
+#side-nav h2 {
+	background: url("../img/bg_side_nav_h2.gif") no-repeat left top; padding: 10px 13px 8px 0px; text-align: right; color: rgb(84, 84, 84); font-size: 11px; font-weight: bold; display: block;
+}
+#side-nav ul {
+	background: url("../img/bg_side_nav_ul.gif") no-repeat left bottom; padding: 0px 1px 5px; width: 190px; text-align: right; float: left;
+}
+#side-nav ul li {
+	width: 190px; clear: both; float: right; display: block;
+}
+#side-nav ul li a {
+	padding: 5px 11px 5px 0px; width: 179px; color: rgb(84, 84, 84); display: block;
+}
+#side-nav ul li a:hover {
+	color: rgb(84, 84, 84); background-color: rgb(218, 218, 218);
+}
+#side-nav ul li.selected a {
+	background: url("../img/bg_side_nav_ul_li_a.gif") repeat-x left top; color: rgb(255, 255, 255); font-weight: bold;
+}
+#side-nav ul li.selected a:hover {
+	color: rgb(255, 255, 255); font-weight: bold;
+}
+.home_news {
+	width: 632px; margin-top: 9px; float: left;
+}
+.home_news h2 {
+	background: url("../img/bg_home_news_h2.gif") no-repeat left top; padding: 7px 0px 6px 9px; width: 583px; color: rgb(122, 122, 122) !important; font-size: 13px !important; font-weight: bold; display: block;
+}
+.home_news_list {
+	
+}
+.home_news_list li {
+	padding: 0px 8px 17px; width: 573px; color: rgb(119, 119, 119); margin-bottom: 10px; float: left; display: block;
+}
+.home_news_list li img {
+	border: 3px solid rgb(225, 225, 225); margin-left: 10px; float: right;
+}
+.home_news_list li div {
+	margin-bottom: 10px; float: none; display: block;
+}
+.home_news_list li div span {
+	color: rgb(143, 141, 141); font-weight: bold; margin-right: 15px; float: left; display: block;
+}
+.home_news_list li div a {
+	color: rgb(139, 0, 0); font-weight: bold;
+}
+.home_news_list li div a:hover {
+	color: rgb(221, 56, 49);
+}
+.category_home_news {
+	font: bold 12px/normal Arial; padding: 0px 0px 10px 10px; width: 582px; margin-top: 0px; margin-bottom: 12px; border-bottom-color: currentColor; border-bottom-width: 1px; border-bottom-style: dotted; float: left; display: block; font-size-adjust: none; font-stretch: normal;
+}
+#breadcrumbs {
+	background: url("../img/bg_breadcrumbs.gif") repeat-x left top; width: 1024px; margin-bottom: 1px; border-bottom-color: rgb(234, 236, 238); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+#breadcrumbs span {
+	padding: 8px 0px 0px 10px; font-size: 11px; font-weight: bold; margin-right: 10px; float: left; display: block;
+}
+#breadcrumbs ul {
+	float: left; display: block;
+}
+#breadcrumbs ul li {
+	background: url("../img/bg_breadcrumbs_separator.gif") no-repeat right top; padding: 8px 24px 8px 10px; color: rgb(114, 114, 114); font-size: 11px; font-weight: bold; margin-right: 2px; float: left; display: block;
+}
+#breadcrumbs ul li.last {
+	margin-left: 2px;
+}
+#breadcrumbs ul li a {
+	color: rgb(114, 114, 114); font-weight: normal;
+}
+#breadcrumbs ul li a:hover {
+	color: rgb(79, 79, 79);
+}
+#breadcrumbs a.print {
+	background: url("../img/bg_print.gif") no-repeat left; padding: 9px 10px 7px 21px; color: rgb(153, 153, 153); font-size: 10px; float: right;
+}
+#breadcrumbs a.print:hover {
+	background: url("../img/bg_print_hover.gif") no-repeat left; color: rgb(85, 85, 85);
+}
+a.switch {
+	background: url("../img/bg_filter_switch_hide.gif") no-repeat right; color: rgb(101, 101, 101); padding-right: 10px; font-size: 11px; font-weight: bold; margin-top: -27px; margin-right: 10px; float: right; position: relative; z-index: 80; cursor: pointer;
+}
+.filter {
+	width: 624px; margin-bottom: 10px; float: left; display: block; position: relative;
+}
+.filter_view {
+	margin-top: 40px !important;
+}
+.filter-inner {
+	background: url("../img/bg_filter_inner.png") no-repeat left top; float: left; display: block; position: relative;
+}
+.filter .bottom {
+	background: url("../img/bg_filter_inner_bottom.png") no-repeat left top; width: 624px; height: 6px; float: left;
+}
+* html .filter-inner .bottom {
+	bottom: -12px;
+}
+.filter-calendar {
+	margin-top: 35px;
+}
+#filter-form {
+	float: left;
+}
+.filter form {
+	width: 624px; float: left; display: block;
+}
+.filter form fieldset {
+	padding: 10px 10px 0px; width: 532px; float: left;
+}
+.filter form div {
+	width: auto; height: 30px; margin-right: 10px; float: left; display: block;
+}
+.filter form div.text {
+	width: 207px !important; margin-right: 5px;
+}
+.filter form div.text label {
+	width: 65px !important;
+}
+.filter form div.select {
+	padding: 0px !important; width: auto; margin-right: 19px;
+}
+.filter form div.select label {
+	
+}
+.filter form div label {
+	width: 77px; color: rgb(132, 132, 132); padding-top: 4px; font-size: 11px; font-weight: bold; float: left; display: block;
+}
+.filter form div select {
+	border-width: medium 1px 1px medium; border-style: none solid solid none; border-color: currentColor rgb(204, 204, 204) rgb(204, 204, 204) currentColor; padding: 3px; width: 130px; color: rgb(68, 68, 68); font-size: 11px; margin-left: -14px; float: left; display: block;
+}
+.filter form div input {
+	border-width: medium 1px 1px medium; border-style: none solid solid none; border-color: currentColor rgb(204, 204, 204) rgb(204, 204, 204) currentColor; padding: 4px; color: rgb(68, 68, 68); font-size: 11px;
+}
+.filter form div.datepicker {
+	width: 275px;
+}
+.filter form div.datepicker label {
+	width: 77px;
+}
+.filter form div.datepicker input {
+	background: url("../img/ico_calendar.gif") no-repeat 94% rgb(255, 255, 255); width: 78px;
+}
+.filter form div.datepicker span {
+	padding: 0px 5px;
+}
+.filter form div.submit {
+	margin: 0px 8px 0px 0px; width: auto; padding-bottom: 0px; float: right; display: block;
+}
+.submit input {
+	background: url("../img/bg_filter_submit_input.gif") repeat-x left top; border-width: 1px; border-style: solid; border-color: rgb(232, 232, 232) rgb(204, 204, 204) rgb(204, 204, 204) rgb(232, 232, 232); padding: 4px 10px !important; color: rgb(85, 85, 85) !important; font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; margin-right: 7px; float: left; display: block; cursor: pointer;
+}
+.submit input:hover {
+	background: url("../img/bg_filter_button.gif") repeat-x left 120%;
+}
+#news {
+	width: 624px; float: left;
+}
+#news h2 {
+	background: url("../img/bg_home_news_h2.gif") no-repeat left top; padding: 7px 0px 6px 9px; color: rgb(122, 122, 122); font-weight: bold; display: block;
+}
+.news-list {
+	
+}
+.news-list li {
+	padding: 14px 8px 22px; width: 530px; color: rgb(119, 119, 119); line-height: 16px; border-bottom-color: rgb(232, 232, 232); border-bottom-width: 1px; border-bottom-style: solid; float: left; display: block;
+}
+.news-list li img {
+	border: 3px solid rgb(225, 225, 225); margin-left: 10px; float: right;
+}
+.news-list li div {
+	width: 420px; margin-bottom: 10px; float: none; display: block;
+}
+.news-list li div span {
+	color: rgb(143, 141, 141); font-weight: bold; margin-right: 15px; float: left; display: block;
+}
+.news-list li div a {
+	color: rgb(74, 132, 166); font-weight: bold;
+}
+.news-list li div a:hover {
+	border-bottom-color: rgb(74, 132, 166); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.news-list li div em.special {
+	background: url("../img/bg_news_list_special.gif") no-repeat left top; padding: 1px 4px 2px 5px; color: rgb(255, 255, 255); font-size: 11px; font-weight: bold; margin-left: 5px; display: inline-block;
+}
+#news a.back {
+	padding: 4px 10px; color: rgb(85, 85, 85); margin-top: 10px; float: left; display: block; background-color: rgb(204, 204, 204);
+}
+.news-details ul li {
+	padding-right: 0px !important; padding-left: 0px !important; border-bottom-color: currentColor !important; border-bottom-width: medium !important; border-bottom-style: none !important;
+}
+.news-details ul li a {
+	color: rgb(222, 57, 50); font-weight: bold; border-bottom-color: rgb(222, 57, 50); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+.news-details ul li a:hover {
+	color: rgb(39, 106, 169);
+}
+.category {
+	font: bold 15px/normal Arial; padding: 5px; width: 535px; color: rgb(102, 102, 102); margin-top: 8px; border-bottom-color: rgb(79, 138, 173); border-bottom-width: 1px; border-bottom-style: dotted; float: left; font-size-adjust: none; font-stretch: normal;
+}
+#download {
+	width: 624px; margin-top: 20px; float: left;
+}
+#download span.title {
+	color: rgb(119, 119, 119); padding-bottom: 6px; font-size: 11px; font-weight: bold; border-bottom-color: rgb(235, 235, 235); border-bottom-width: 5px; border-bottom-style: solid; display: block;
+}
+#download ul {
+	width: 624px; float: left; display: block;
+}
+#download ul li {
+	padding: 11px 0px; width: 624px; border-bottom-color: rgb(232, 232, 232); border-bottom-width: 1px; border-bottom-style: solid; float: left; display: block;
+}
+#download ul li.colored {
+	background-color: rgb(247, 247, 247);
+}
+#download ul li a {
+	background: url("../img/bg_download_ul_li_a.gif") no-repeat left top; padding: 3px 0px 2px 22px; width: 70px; color: rgb(95, 95, 95); font-size: 11px; font-weight: bold; margin-right: 20px; float: left; display: block;
+}
+#download ul li a:hover {
+	background: url("../img/bg_download_ul_li_a.gif") no-repeat left bottom;
+}
+#download ul li a em.doc {
+	color: rgb(79, 106, 168);
+}
+#download ul li a em.pdf {
+	color: rgb(240, 31, 31);
+}
+#download ul li a em.xls {
+	color: rgb(41, 152, 36);
+}
+#download ul li a em.ppt {
+	color: rgb(228, 121, 25);
+}
+#download ul li a em.zip {
+	color: rgb(227, 175, 18);
+}
+#download ul li span {
+	width: 430px; color: rgb(119, 119, 119); padding-top: 2px; font-weight: bold; float: left; display: block;
+}
+#download a.all {
+	background: url("../img/bg_download_all.gif") no-repeat left top; margin: 10px 0px; padding: 5px 7px 6px 24px; color: rgb(255, 255, 255); font-size: 11px; font-weight: bold; float: right; display: block;
+}
+#download a.all:hover {
+	background: url("../img/bg_download_all.gif") no-repeat left bottom;
+}
+#documents {
+	width: 624px; float: left;
+}
+#documents span.title {
+	color: rgb(119, 119, 119); padding-bottom: 6px; font-size: 11px; font-weight: bold; border-bottom-color: rgb(235, 235, 235); border-bottom-width: 5px; border-bottom-style: solid; display: block;
+}
+#documents ul {
+	width: 624px; float: left; display: block;
+}
+#documents ul li {
+	padding: 10px 0px; width: 624px; border-bottom-color: rgb(232, 232, 232); border-bottom-width: 1px; border-bottom-style: solid; float: left; display: block;
+}
+#documents ul li a {
+	color: rgb(74, 132, 166); font-weight: bold; display: block;
+}
+#documents ul li.colored {
+	background-color: rgb(247, 247, 247);
+}
+#documents .download-button {
+	margin: 0px; float: left;
+}
+#documents .download-button a {
+	background: url("../img/bg_download_ul_li_a.gif") no-repeat left top; padding: 1px 0px 2px 22px; width: 70px; color: rgb(95, 95, 95); font-size: 11px; font-weight: bold; margin-right: 20px; margin-left: 10px; float: left; display: block;
+}
+#documents .download-button a:hover {
+	background: url("../img/bg_download_ul_li_a.gif") no-repeat left bottom; border: currentColor;
+}
+#documents .download-button a em.doc {
+	color: rgb(79, 106, 168);
+}
+#documents .download-button a em.pdf {
+	color: rgb(240, 31, 31);
+}
+#documents .download-button a em.xls {
+	color: rgb(41, 152, 36);
+}
+#documents .download-button a em.ppt {
+	color: rgb(228, 121, 25);
+}
+#documents .download-button a em.zip {
+	color: rgb(227, 175, 18);
+}
+#documents .text {
+	margin: 0px; width: 400px; float: left;
+}
+#documents .text a {
+	margin-bottom: 8px;
+}
+#documents .text a:hover {
+	border: currentColor;
+}
+.paging {
+	padding: 10px 0px; float: left; display: block;
+}
+.paging span {
+	font-size: 11px; margin-right: 4px; float: left; display: block;
+}
+.paging span.current {
+	padding: 4px 8px; color: rgb(255, 255, 255) !important; font-weight: bold; background-color: #9C1F2D;
+}
+.paging span a {
+	padding: 4px 8px; color: rgb(102, 102, 102) !important; font-weight: bold; border-bottom-color: currentColor !important; border-bottom-width: medium !important; border-bottom-style: none !important; display: block;
+}
+.paging span a:hover {
+	padding: 4px 8px; color: rgb(255, 255, 255) !important; background-color: #9C1F2D;
+}
+#documents h2 {
+	background: url("../img/bg_home_news_h2.gif") no-repeat left top; padding: 7px 0px 6px 9px; color: rgb(122, 122, 122); font-weight: bold; display: block;
+}
+.documents-list li {
+	padding: 14px 8px 22px; color: rgb(119, 119, 119); line-height: 16px; border-bottom-color: rgb(232, 232, 232); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+.documents-list li img {
+	border: 3px solid rgb(225, 225, 225); margin-left: 10px; float: right;
+}
+.documents-list li div {
+	margin-bottom: 10px; float: none; display: block;
+}
+.documents-list li div a {
+	color: rgb(74, 132, 166); font-weight: bold;
+}
+.documents-list li div a:hover {
+	border-bottom-color: rgb(74, 132, 166); border-bottom-width: 1px; border-bottom-style: dotted;
+}
+#calendar-main {
+	width: 624px; float: left; display: block;
+}
+#calendar-list {
+	float: left; display: block;
+}
+#calendar-list li {
+	padding: 13px; width: 526px; border-bottom-color: rgb(232, 232, 232); border-bottom-width: 1px; border-bottom-style: solid; float: left; display: block;
+}
+#calendar-list li.colored {
+	margin-top: 1px; background-color: rgb(247, 247, 247);
+}
+#calendar-list li span {
+	color: rgb(143, 141, 141); font-size: 14px; font-weight: bold;
+}
+#calendar-list li h2 {
+	width: 450px; color: rgb(74, 132, 166); font-size: 14px; font-weight: bold;
+}
+#calendar-list li em {
+	color: rgb(143, 141, 141); font-weight: bold; float: right;
+}
+#calendar-list li a {
+	color: rgb(74, 132, 166);
+}
+#calendar-list li a:hover {
+	color: rgb(221, 56, 49);
+}
+#calendar-list-thumb {
+	float: left; display: block;
+}
+#calendar-list-thumb li {
+	padding: 13px; width: 158px; float: left; display: block;
+}
+#calendar-list-thumb li.colored {
+	background-color: rgb(247, 247, 247);
+}
+#calendar-list-thumb li span {
+	color: rgb(143, 141, 141); font-size: 11px; font-weight: bold;
+}
+#calendar-list-thumb li h2 {
+	color: rgb(74, 132, 166); font-size: 13px; font-weight: bold;
+}
+#calendar-list-thumb li em {
+	color: rgb(143, 141, 141); font-weight: bold; margin-bottom: 7px; display: block;
+}
+.view-type {
+	margin-right: 8px; float: right; display: block;
+}
+.view-type a {
+	padding: 11px 59px 12px 18px; color: rgb(184, 184, 184); font-size: 11px; font-weight: bold; float: left; display: block;
+}
+.view-type .list-view {
+	background: url("../img/bg_list_view.gif") no-repeat right top;
+}
+.view-type .cell-view {
+	background: url("../img/bg_cell_view.gif") no-repeat right top;
+}
+.view-type .list-view:hover {
+	background: url("../img/bg_list_view.gif") no-repeat right bottom; color: rgb(102, 102, 102);
+}
+.view-type .cell-view:hover {
+	background: url("../img/bg_cell_view.gif") no-repeat right bottom; color: rgb(102, 102, 102);
+}
+.weather {
+	margin: 0px auto; padding: 5px; border: 1px solid rgb(224, 224, 224); width: 535px; text-align: center; background-color: rgb(255, 255, 255);
+}
+.weather thead tr th {
+	padding: 6px 3px; color: rgb(85, 85, 85); font-size: 11px; font-weight: bold; background-color: rgb(229, 229, 229);
+}
+.weather thead tr th.middle {
+	vertical-align: middle;
+}
+.weather tbody tr td {
+	padding: 3px;
+}
+.weather tbody tr td img {
+	margin-top: 5px; margin-bottom: 5px;
+}
+.weather tbody tr td.middle {
+	font-weight: bold; vertical-align: middle;
+}
+.weather tbody tr.colored td {
+	background-color: rgb(243, 243, 243);
+}
+.search_box {
+	background: url("../img/bg_search_box.gif") no-repeat left top; padding: 0px 13px; width: 153px; height: 117px; margin-bottom: 9px; float: left;
+}
+.search_box h2 {
+	padding-top: 10px; font-size: 11px; font-weight: bold; margin-bottom: 8px; display: block;
+}
+.search_box_form {
+	float: left;
+}
+.search_box_form div {
+	width: 158px; padding-bottom: 7px; float: left; display: block;
+}
+.search_box_form div input {
+	border-width: 1px; border-style: solid; border-color: rgb(207, 207, 207) rgb(183, 183, 183) rgb(183, 183, 183) rgb(207, 207, 207); padding: 3px; width: 125px; color: rgb(184, 184, 184); font-size: 11px; font-weight: bold;
+}
+.search_box_form div input:focus {
+	color: rgb(85, 85, 85); font-size: 11px; font-weight: normal;
+}
+.search_box_form div input.submit {
+	background: url("../img/bg_search_box_form_submit.gif") no-repeat center; border: currentColor; width: 20px !important; cursor: pointer;
+}
+.search_box_form div input.submit:hover {
+	background: url("../img/bg_search_box_form_submit_hover.gif") no-repeat center;
+}
+.search_box_form div input.checkbox {
+	padding: 0px !important; border: currentColor !important; width: auto !important; margin-right: 10px; float: left;
+}
+* html .search_box_form div input.checkbox {
+	border: currentColor !important;
+}
+.search_box_form div label {
+	padding-top: 3px; font-size: 11px; font-weight: bold; display: block;
+}
+.search_box_form div input.google {
+	background: url("../img/bg_search_box_form_google.gif") no-repeat right rgb(255, 255, 255) !important;
+}
+.home_weather {
+	width: 179px; margin-bottom: 9px; float: left;
+}
+.home_weather ul {
+	float: left; display: block;
+}
+.home_weather ul li {
+	float: left; display: block;
+}
+.home_weather ul li a {
+	background: url("../img/bg_home_weather_ul_li_a.gif") no-repeat left top; width: 89px; height: 108px; text-align: center; color: rgb(156, 156, 156); padding-top: 9px; font-size: 13px; font-weight: bold; float: left; display: block;
+}
+.home_weather ul li a img {
+	margin-bottom: 5px;
+}
+.home_weather ul li a span {
+	color: rgb(156, 156, 156); display: block;
+}
+.home_weather ul li a em {
+	color: rgb(92, 155, 193); display: block;
+}
+.home_weather ul li a:hover span {
+	color: rgb(119, 119, 119);
+}
+.home_weather ul li a:hover em {
+	color: rgb(41, 106, 170);
+}
+.home_weather p {
+	background: url("../img/bg_home_weather_p.gif") no-repeat left bottom; padding: 9px 18px 8px; top: -2px; width: 150px; text-align: center; color: rgb(119, 119, 119); font-size: 11px; font-weight: bold; float: left; display: block; position: relative;
+}
+.home_weather p a {
+	color: rgb(191, 191, 191);
+}
+.home_weather p span {
+	color: rgb(191, 191, 191);
+}
+.home_weather p a:hover {
+	color: rgb(85, 85, 85);
+}
+#exchange {
+	padding-top: 0px; margin-bottom: 20px !important; float: left; display: block;
+}
+#exchange table {
+	width: 179px; color: rgb(102, 102, 102); font-weight: bold; display: block;
+}
+#exchange table tbody {
+	display: block;
+}
+#exchange table tr {
+	display: block;
+}
+#exchange table tr td {
+	padding: 4px 0px 4px 6px; width: 100%; vertical-align: middle;
+}
+#exchange table tr.top td {
+	background: url("../img/bg_exchange_top.gif") no-repeat left top; width: 173px; font-size: 11px; font-weight: bold;
+}
+#exchange table tr.bottom td {
+	background: url("../img/bg_exchange_bottom.gif") no-repeat left bottom; width: 173px; color: rgb(141, 141, 141);
+}
+#exchange table tr.bottom td a {
+	color: rgb(141, 141, 141);
+}
+#exchange table tr.bottom td a:hover {
+	color: rgb(68, 68, 68);
+}
+#exchange table tr td em {
+	padding: 0px !important; width: 66px; text-align: right; font-style: normal; font-weight: normal !important; margin-right: 10px; display: block;
+}
+#exchange table a {
+	color: rgb(0, 51, 102); font-size: 11px; float: none; display: inline;
+}
+#exchange table a:hover {
+	text-decoration: underline;
+}
+#exchange table img {
+	padding-right: 5px; margin-top: 2px; vertical-align: middle; float: left;
+}
+#exchange table .blue td {
+	
+}
+#exchange table tr.colored td {
+	background-color: rgb(235, 235, 235);
+}
+#news-box {
+	background: url("../img/bg_home_news_bottom.gif") no-repeat left bottom; width: 179px; padding-bottom: 5px; margin-bottom: 10px; float: left;
+}
+#news-box h2 {
+	background: url("../img/bg_news_box_h2.gif") no-repeat left top; padding: 6px 0px 5px 9px; color: rgb(126, 126, 126); font-size: 11px; font-weight: bold; display: block;
+}
+#news-box ul {
+	width: 179px; float: left; display: block;
+}
+#news-box ul li {
+	padding: 10px 0px; width: 179px; color: rgb(119, 119, 119); border-bottom-color: rgb(216, 216, 216); border-bottom-width: 1px; border-bottom-style: solid; float: left; display: block;
+}
+#news-box ul li em {
+	color: rgb(143, 141, 141); font-size: 11px; font-weight: bold; margin-right: 7px; float: left; display: inline;
+}
+#news-box ul li a {
+	color: rgb(139, 0, 0); font-weight: bold; margin-bottom: 10px; display: inline;
+}
+#news-box ul li a:hover {
+	color: rgb(221, 56, 49);
+}
+#news-box ul li.last {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+#news-box ul li div {
+	margin-top: 10px;
+}
+#footer {
+	background: url("../img/bg_footer.gif") no-repeat left top; padding: 20px 0px; width: 1024px; float: left;
+}
+#footer ul {
+	
+}
+#footer ul li {
+	float: left; display: block;
+}
+#footer ul li a {
+	color: rgb(106, 106, 106); font-size: 11px; margin-right: 30px;
+}
+#footer ul li a:hover {
+	text-decoration: underline !important;
+}
+#footer p {
+	color: rgb(106, 106, 106); font-size: 11px; float: right;
+}
+#footer p a {
+	color: rgb(106, 106, 106); font-weight: bold;
+}
+#footer p a:hover {
+	color: rgb(38, 103, 166);
+}
+.horizontal_home_accordion .intro {
+	background: url("../img/bg_haccordion_intro.png") no-repeat left bottom; padding: 10px; left: 0px; width: 382px; bottom: 0px; position: absolute;
+}
+.horizontal_home_accordion .intro h1 {
+	font: bold 20px/normal Arial, Helvetica, sans-serif; color: rgb(255, 255, 255); font-size-adjust: none; font-stretch: normal;
+}
+.horizontal_home_accordion .intro p {
+	color: rgb(255, 255, 255);
+}
+.horizontal_home_accordion .intro p a {
+	color: rgb(255, 255, 255); font-weight: bold !important; text-decoration: underline !important;
+}
+.horizontal_home_accordion .intro p a:hover {
+	
+}
+#home_accordion_holder {
+	margin: 0px; height: 278px;
+}
+#home_accordion_holder {
+	background: url("../img/pic_horizontal_accordion_test.jpg") no-repeat left top; right: 0px; position: relative;
+}
+#horizontal_container {
+	margin: 0px; padding: 0px; width: 624px; height: 278px; overflow: hidden; position: relative;
+}
+.horizontal_accordion_toggle {
+	margin: 0px; width: 30px; height: 278px; color: rgb(203, 203, 203); overflow: hidden; font-size: 11px; text-decoration: none; float: left; display: block;
+}
+.horizontal_accordion_content {
+	border: currentColor; left: 30px; width: 624px; height: 278px; color: rgb(101, 101, 101); overflow: hidden; float: left; background-color: rgb(204, 204, 204);
+}
+.horizontal_accordion_content_holder {
+	padding: 0px; width: 624px; height: 278px; line-height: 150%; display: block;
+}
+.accordion_text_holder h1 {
+	font-size: 18px; font-weight: bold;
+}
+#accordion_1 {
+	background: url("../img/pic_horizontal_accordion_test_1.jpg") no-repeat left top;
+}
+#accordion_2 {
+	background: url("../img/pic_horizontal_accordion_test_2.jpg") no-repeat left top;
+}
+#accordion_3 {
+	background: url("../img/pic_horizontal_accordion_test_5.jpg") no-repeat left top;
+}
+#accordion_4 {
+	background: url("../img/pic_horizontal_accordion_test_4.jpg") no-repeat left top;
+}
+#accordion_5 {
+	background: url("../img/pic_horizontal_accordion_test_3.jpg") no-repeat -30% top;
+}
+.horizontal_accordion_txt {
+	background: url("../img/bg_haccordion_intro.png") no-repeat left bottom; padding: 10px; left: 0px; width: 412px; height: 40px; bottom: 0px; position: absolute;
+}
+.horizontal_accordion_txt p {
+	color: rgb(255, 255, 255);
+}
+.horizontal_accordion_txt h1 {
+	color: rgb(255, 255, 255); font-size: 18px; font-weight: bold;
+}
+.horizontal_accordion_txt h1 a {
+	color: rgb(255, 255, 255);
+}
+.horizontal_accordion_txt h1 a:hover {
+	text-decoration: underline !important;
+}
+.horizontal_accordion_txt p a {
+	color: rgb(255, 255, 255); font-weight: bold; text-decoration: underline !important;
+}
+#calendar_box {
+	width: 194px; padding-bottom: 9px; float: left; position: relative;
+}
+#calendar_box a.title {
+	background: url("../img/bg_calendar_holder_title.gif") no-repeat left top; padding: 9px 13px 9px 0px; text-align: right; color: rgb(84, 84, 84); font-size: 11px; font-weight: bold; display: block;
+}
+#calendar_box a.title:hover {
+	color: rgb(255, 255, 255); text-decoration: underline !important;
+}
+#calendar_box #calendar_body {
+	background: url("../img/bg_calendar_holder.gif") no-repeat left bottom; padding: 5px; width: 182px; float: left;
+}
+#calendar_box #calendar_body div.caption {
+	padding: 5px 0px; width: 181px; margin-bottom: 5px; float: left;
+}
+#calendar_box #calendar_body div.caption span {
+	padding: 3px 0px 0px; width: 136px; text-align: center; color: rgb(102, 102, 102); font-weight: bold; float: left; display: block;
+}
+#calendar_box #calendar_body div.caption span a {
+	padding: 4px 0px; width: 133px; text-align: center; color: rgb(102, 102, 102); font-weight: bold; text-decoration: none; margin-top: -3px;
+}
+#calendar_box #calendar_body div.caption a {
+	padding: 3px; display: block;
+}
+#calendar_box #calendar_body div.caption a img {
+	margin: 0px !important; width: auto !important; height: auto !important; position: static;
+}
+#calendar_box #calendar_body div.caption a:hover {
+	
+}
+#calendar_box #calendar_body div.caption .nav-left {
+	background: url("../img/calendar_left.gif") no-repeat left top; margin: 3px; padding: 0px; width: 16px; height: 15px; float: left;
+}
+#calendar_box #calendar_body div.caption .nav-left:hover {
+	background: url("../img/calendar_left.gif") no-repeat left bottom;
+}
+#calendar_box #calendar_body div.caption .nav-right {
+	background: url("../img/calendar_right.gif") no-repeat left top; margin: 3px; padding: 0px; width: 16px; height: 15px; float: right;
+}
+#calendar_box #calendar_body div.caption .nav-right:hover {
+	background: url("../img/calendar_right.gif") no-repeat left bottom; width: 16px; height: 15px; float: right;
+}
+#calendar_box table {
+	width: 100%; float: left;
+}
+#calendar_box table th {
+	color: rgb(102, 102, 102); padding-bottom: 5px; font-weight: bold; vertical-align: middle;
+}
+#calendar_box table th {
+	text-align: center;
+}
+#calendar td {
+	text-align: center;
+}
+#calendar_box table td {
+	padding: 2px 0px; text-align: center; color: rgb(82, 82, 82); font-size: 11px;
+}
+#calendar_box table .first {
+	padding-left: 0px;
+}
+#calendar_box table .last {
+	padding-right: 5px; border-right-width: 0px;
+}
+#calendar_box table td a {
+	background: url("../img/bg_tooltip_calendar.gif") no-repeat center; padding: 3px 0px; color: rgb(51, 51, 51); font-weight: bold; text-decoration: none; display: block;
+}
+#calendar_box table td a:hover {
+	background: url("../img/bg_tooltip_calendar_hover.gif") no-repeat center; color: rgb(255, 255, 255);
+}
+#calendar_box table .before {
+	color: rgb(172, 172, 172);
+}
+#calendar_box table .today {
+	color: rgb(54, 95, 183); font-weight: bold;
+}
+#calendar_box table .today a {
+	color: rgb(255, 255, 255); background-color: rgb(54, 95, 183);
+}
+#calendar_box table .today a:hover {
+	color: rgb(0, 0, 0); background-color: rgb(109, 207, 246);
+}
+#calendar_box img {
+	margin: 99px 0px 99px 85px; width: 20px; height: 20px;
+}
+#calendar_box div.caption span img {
+	margin: 0px; width: auto; height: auto; vertical-align: middle;
+}
+#calendar {
+	width: 100%; float: left;
+}
+#calendar a img {
+	border: currentColor;
+}
+#calendar .caption {
+	padding: 5px 0px; text-align: left; color: rgb(102, 102, 102); font-size: 13px; font-weight: bold; margin-bottom: 10px; float: left;
+}
+#calendar .caption a {
+	padding: 1px; width: 25px; height: 24px; text-indent: 9999px !important; overflow: hidden; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none; float: left; display: block; background-color: rgb(205, 205, 205);
+}
+#calendar .caption a.prev {
+	background: url("../img/bg_caption_prev.gif") no-repeat left top;
+}
+#calendar .caption a.prev:hover {
+	background: url("../img/bg_caption_prev.gif") no-repeat left bottom;
+}
+#calendar .caption a.next {
+	background: url("../img/bg_caption_next.gif") no-repeat left top;
+}
+#calendar .caption a.next:hover {
+	background: url("../img/bg_caption_next.gif") no-repeat left bottom;
+}
+#calendar .caption select {
+	margin: 0px 5px; padding: 2.8px; float: left;
+}
+#calendar #calendar-jump-month {
+	margin-right: 0px !important;
+}
+#calendar div.calendar-event {
+	display: none !important;
+}
+#calendar table {
+	width: 100%; margin-bottom: 15px; float: left;
+}
+#calendar table tr {
+	color: rgb(51, 51, 51);
+}
+#calendar table tr th {
+	background: rgb(124, 155, 173); padding: 5px 0px; border: 1px solid rgb(204, 204, 204); text-align: center; color: rgb(255, 255, 255); vertical-align: middle;
+}
+#calendar table td {
+	background: white; padding: 0px; border: 1px solid rgb(204, 204, 204); width: 80px; height: 90px; text-align: left; vertical-align: top;
+}
+#calendar table td a {
+	padding: 3px; color: white; font-weight: bold; text-decoration: none; display: block;
+}
+#calendar table td span {
+	background: rgb(236, 236, 236); padding: 4px; color: rgb(92, 92, 92); font-weight: bold; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; display: block;
+}
+#calendar table td.today span {
+	background: rgb(204, 204, 204) !important; color: rgb(92, 92, 92) !important;
+}
+#calendar table td.empty {
+	border: currentColor;
+}
+#applications-list {
+	
+}
+#applications-list li {
+	background: url("../img/bg_applications_list_li.png") no-repeat left top; padding: 15px 15px 10px; width: 522px; margin-bottom: 15px; float: left; display: block; position: relative;
+}
+#applications-list li div.element {
+	width: 248px; margin-right: 10px; margin-bottom: 10px; float: left; display: block;
+}
+#applications-list li div.last {
+	margin-bottom: 0px;
+}
+#applications-list li div.element img {
+	margin: 0px 8px 0px 0px; border: 3px solid rgb(227, 227, 227); float: left; display: block;
+}
+#applications-list li img {
+	border: 3px solid rgb(227, 227, 227); margin-right: 15px; margin-bottom: 10px; float: left; display: block;
+}
+#applications-list li span {
+	font-size: 11px; display: block;
+}
+#applications-list li span a {
+	color: rgb(87, 148, 185);
+}
+#applications-list li span a:hover {
+	color: rgb(9, 119, 194);
+}
+#applications-list li h2 {
+	width: 330px; color: rgb(103, 103, 103); padding-bottom: 10px; font-size: 15px; margin-bottom: 0px !important; float: left;
+}
+#applications-list li .apps_details {
+	padding: 3px 6px; color: rgb(102, 102, 102); font-size: 12px; font-weight: bold; margin-top: 8px; float: right; display: block; background-color: rgb(234, 234, 234);
+}
+#applications-list li .apps_details:hover {
+	color: rgb(255, 255, 255); background-color: rgb(79, 138, 173);
+}
+#applications-list li div.bottom {
+	background: url("../img/bg_applications_list_li_bottom.png") no-repeat left bottom; left: 0px; width: 624px; height: 6px; bottom: -6px; position: absolute;
+}
+span.highlight {
+	margin: 0px !important; padding: 0px !important; color: rgb(74, 132, 166) !important; font-weight: bold !important; float: none !important; display: inline !important; background-color: yellow;
+}
+.phone_book {
+	width: 548px;
+}
+.phone_book h3 {
+	margin: 0px !important; color: rgb(87, 144, 175) !important;
+}
+.phone_book h4 {
+	background: url("../img/bg_phone_book_h4.gif") no-repeat left top; margin: 7px 0px 0px !important; padding: 4px 0px 5px 9px; color: rgb(68, 68, 68) !important; font-size: 13px !important; font-weight: bold !important; float: left;
+}
+.phone_book h4 span {
+	background: url("../img/bg_phone_book_h4.gif") no-repeat right top; padding: 4px 14px 5px 3px;
+}
+.phone_book .main {
+	background: url("../img/bg_phone_book_title.gif") no-repeat right; width: 548px; margin-bottom: 4px; float: left;
+}
+.phone_book table {
+	border: 1px solid rgb(204, 204, 204); width: 100%; clear: both; margin-bottom: 20px;
+}
+.phone_book table thead tr th {
+	padding: 6px; color: rgb(102, 102, 102); font-size: 11px; font-weight: bold; background-color: rgb(230, 230, 230);
+}
+.phone_book table tbody tr td {
+	padding: 6px 4px; background-color: rgb(241, 241, 241);
+}
+.phone_book table tbody tr.colored td {
+	background-color: rgb(241, 241, 241);
+}
+.phone_book table tbody tr.details td {
+	
+}
+.phone_book table tbody tr td a {
+	background: url("../img/bg_phone_book_a_more.gif") no-repeat 99%; padding: 2px 7px 2px 5px; color: rgb(85, 85, 85); font-size: 11px;
+}
+.phone_book table tbody tr td a:hover {
+	background: url("../img/bg_phone_book_a_more_hover.gif") no-repeat 100%; color: rgb(85, 85, 85); font-size: 11px;
+}
+.phone_book table tbody tr td a.opened {
+	background: url("../img/bg_phone_book_a_more_hover.gif") no-repeat 100% !important;
+}
+.phone_book table tbody tr td a.opened:hover {
+	background: url("../img/bg_phone_book_a_more_hover_up.gif") no-repeat 100% !important;
+}
+.phone_book table tbody tr.details {
+	display: none;
+}
+.phone_book table tbody tr td span.more {
+	padding: 2px 4px; color: rgb(102, 102, 102); cursor: pointer; background-color: rgb(208, 208, 208);
+}
+.phone_book table tbody tr td div {
+	padding: 10px;
+}
+.phone_book table tbody tr td div img {
+	margin: 0px 10px 10px 0px; border: 3px solid rgb(204, 204, 204);
+}
+.phone_book table tbody tr td div ul li {
+	margin-bottom: 4px;
+}
+.phone_book table tbody tr td div ul li b {
+	width: 150px; float: left; display: block;
+}
+.phone_book table tbody tr td div ul li a {
+	padding: 0px; color: rgb(0, 102, 153);
+}
+.phone_book table tbody tr td div ul li a:hover {
+	padding: 0px; color: rgb(0, 102, 153); text-decoration: underline !important;
+}
+iframe.selectOverlap {
+	margin: 0px; padding: 0px; border: 0px currentColor; left: 0px; top: 0px; overflow: hidden; filter: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0); position: absolute; z-index: -1;
+}
+#sitemap {
+	padding-left: 0.7em; margin-bottom: 2em;
+}
+#sitemap ul {
+	padding-left: 1em; font-weight: bold;
+}
+#sitemap ul ul {
+	list-style: circle; padding-left: 2.4em; font-weight: normal;
+}
+#sitemap ul ul ul {
+	list-style: square;
+}
+#sitemap li {
+	margin-bottom: 3px;
+}
+#sitemap a {
+	color: rgb(74, 132, 166); font-size: 110%;
+}
+#sitemap a:hover {
+	border-bottom-color: rgb(74, 132, 166); border-bottom-width: 1px; border-bottom-style: dotted;
+}

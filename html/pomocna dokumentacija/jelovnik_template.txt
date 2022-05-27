@@ -1,0 +1,31 @@
+<table>
+<tr><td>04.11.2013. Poned</td><td>-</td><td>1.	Burek<br>2.	Pržena slanina, sir, jaje, jogurt</td></tr>
+<tr><td>05.11.2013. Utorak</td><td>-</td><td>1.	Krompir paprikaš sa junetinom <br>2.	Grèke æufte<br>3. Salata, desert</td></tr>
+<tr><td>06.11.2013. Sreda</td><td>-</td><td>1.	Varivo sa svinjskim mesom<br>2.	Kranjska kobasica sa restovanim krompirom <br>3.	Supa </td></tr>
+<tr><td>07.11.2013. Èetvrtak</td><td>-</td><td>1. Pileæi file u sosu,rižoto sa peèurkama <br>2.	Osliæ, krompir salata <br>3.	Salata</td></tr>
+<tr><td>08.11.2013. Petak</td><td>-</td><td>1.	Pasulj sa roštiljskom kobasicom<br>2.	Teleæa èorba <br>3. Paprièica</td></tr>
+<tr><td><br></td></tr>
+
+<tr><td>11.11.2013. Poned</td><td>-</td><td>1.	Gratinirana makarona, kranjska kobasica, jogurt<br>2.	Pileæa prsa, kaèkavalj, jaje, jogurt, desert</td></tr>
+<tr><td>12.11.2013. Utorak</td><td>-</td><td>1.	Pileæi paprikaš <br>2.	Pljeskavica sa restovanim krompirom<br>3. Salata</td></tr>
+<tr><td>13.11.2013. Sreda</td><td>-</td><td>1.	Restovana pileæa džigerica, rižoto s povræem<br>2.	Ðuveè sa svinjskim mesom <br>3.	Supa</td></tr>
+<tr><td>14.11.2013. Èetvrtak</td><td>-</td><td>1.	Juneæi gulaš sa makaronom<br>2.	Piletina zapeèena na tarani <br>3.	Salata</td></tr>
+<tr><td>15.11.2013. Petak</td><td>-</td><td>1.	Pasulj sa roštiljskom kobasicom<br>2.	Bela èorba <br>3. Paprièice</td></tr>
+<tr><td><br></td></tr>	
+
+<tr><td>18.11.2013. Poned</td><td>-</td><td>1.	Burek, jogurt<br>2.	Šunka, urnebes, jaje, jogurt</td></tr>
+<tr><td>19.11.2013. Utorak</td><td>-</td><td>1. Junetina u sosu, pire<br>2. Rolat sa mlevenim mesom, pire, grašak<br>3. Salata</td></tr>
+<tr><td>20.11.2013. Sreda</td><td>-</td><td>1.	Svinjsko peèenje, zapeèena boranija<br>2.	Osliæ, krompir salata <br>3.	Supa </td></tr>
+<tr><td>21.11.2013. Èetvrtak</td><td>-</td><td>1.	Æufte u paradajz sosu, makarone<br>2.	Pileæi sote, rižoto sa peèurkama <br>3.	Salata, voæe</td></tr>
+<tr><td>22.11.2013. Petak</td><td>-</td><td>1.	Pasulj sa roštiljskom kobasicom<br>2.	Teleæa èorba <br>3. Paprièice</td></tr>
+<tr><td><br></td></tr>
+
+<tr><td>25.11.2013. Poned</td><td>-</td><td>1.	Barena viršla, urnebes, jaje, jogurt <br>2.	Pileæa prsa, kaèkavalj, jaje, jogurt</td></tr>
+<tr><td>26.11.2013. Utorak</td><td>-</td><td>1.	Natur šnicla, pire <br>2.	Juneæi paprikaš <br>3. Salata</td></tr>
+<tr><td>27.11.2013. Sreda</td><td>-</td><td>1.	Pileæi file u sosu, pire, grašak<br>2.	Sataraš sa svinjskim mesom <br>3.	Supa, desert</td></tr>
+<tr><td>28.11.2013. Èetvrtak</td><td>-</td><td>1.	Juneæi gulaš sa makaronom <br>2.	Pljeskavica sa restovanim krompirom <br>3.	Salata</td></tr>
+<tr><td>29.11.2013. Petak</td><td>-</td><td>1.	Pasulj sa roštiljskom kobasicom<br>2.	Bela èorba<br>3. Paprièice</td></tr>
+<tr><td><br></td></tr>	
+
+
+</table>
