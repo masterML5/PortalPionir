@@ -613,3 +613,38 @@ ul.options li:first-child{margin-top:0}*:not(#old_ie){filter:progid:DXImageTrans
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+.menubar{
+	display: grid;
+    width: 150px;
+    border: 1px solid silver;
+    text-align: center;
+    height: 40px;
+    align-items: center;
+    margin-bottom: 10px;
+	background-color: white;
+
+	border-radius: 0.25rem;
+}
+.menubar a{
+	color: #4C4E52;
+}
+.menubar a:hover{
+	color: #bc3e33;
+}
+.menu{
+	display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+	margin-top: 75px;
+}
+.navbar{
+	margin: 10px;
+	font-size: 20px;
+}
+.navbar a{
+	float: right;
+	margin: 10px;
+	color: #bc3e33;
+	
+}

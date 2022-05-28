@@ -9,7 +9,8 @@ body{
     background: #fff !important; 
     margin-top: 10% !important;
     margin-bottom: 5% !important;
-    width: 70% !important;
+    width: 60% !important;
+    height: 700px;
 }
 .contact-form .form-control{
     border-radius:1rem !important;
@@ -66,4 +67,11 @@ input.btnContact{
 }
 .form-opsti{
     display: grid;
+}
+.row{
+    display: grid;grid-template-columns: repeat(2, 1fr);
+
+}
+.form-control{
+    width: max-content;
 }

@@ -47,7 +47,7 @@ else
   if (!$result) 
   {
     echo "Greška u bazi prilikom izvršenja upita <pre>$query</pre>";
-    echo mysqli_error();
+   
     exit;
   }
   else echo "Uspešno"

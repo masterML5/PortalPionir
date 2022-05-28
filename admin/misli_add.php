@@ -55,7 +55,10 @@ include ('include_fns.php');
                 <img src="../img/pionir-logo.png" alt="rocket_contact"/>
             </div>
             <form action="misao_submit.php" method="post" enctype="multipart/form-data">
-                <h3>Unesite novu misao</h3>
+				<div class="naslov">
+					<h3>Unesite novu misao</h3>
+
+				</div>
                <div class="row">
                     <div class="col-md-6 form-opsti">
                         <div class="form-group">
@@ -65,13 +68,10 @@ include ('include_fns.php');
 						
                         <div class="form-group">
 						<label for="autor">Autor</label>
-                            <input type="text" name="autor" class="form-control" placeholder="Your Email *" value="" />
+                            <input type="text" name="autor" class="form-control" placeholder="Autor" value="" />
                         </div>
 				
-                        <div class="form-group">
-						<label for="naslov">Naslov</label>
-                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
-                        </div>
+                     
                         
                     </div>
                     <div class="col-md-12">

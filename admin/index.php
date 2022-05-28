@@ -9,7 +9,7 @@ include_once('include_fns.php');
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <title>Alfa-Plam a.d. Vranje - Portal</title>
 
-<link href="css/style_v2_optimized.css" rel="stylesheet" type="text/css">
+<link href="css/stylemenu.css" rel="stylesheet" type="text/css">
 
 <meta name="GENERATOR" content="MSHTML 9.00.8112.16443">
 </head>
@@ -22,7 +22,7 @@ include_once('include_fns.php');
 
   if (!check_auth_user()) 
   {
-	echo '<h2> <br><br> </h2>';
+	
   login_form();
   }
   else 
@@ -31,18 +31,31 @@ include_once('include_fns.php');
 		mysqli_set_charset ( $handle , 'utf8');
 		
 		$korisnik = get_korisnik_record($_SESSION['auth_user']);
+		
 
-		echo '<img class="background-image" src="img/login-whisp.png">';
-		echo '<p>Dobrodošli, '.$korisnik['ime'];
-		echo ' (<a href="logout.php">Odjava</a>) (<a href="index.php">Meni</a>) </p>';
-		echo '<p>';
-		echo '<ul>';		
-		echo '<li><a href="vesti_lista.php">Vesti</a></li>';
-		echo '<li><a href="dokumenti_lista.php">Dokumenti</a></li>';
-		echo '<li><a href="imenik_lista.php">Imenik</a></li>';		
-		echo '<li><a href="misli_lista.php">Misli</a></li>';		
-		echo '</ul>';		
-		echo '<p>';
+	?>
+	<body>
+		<div class="navbar">
+		<span>Dobrodošli, <span id="korisnik"><?php echo $korisnik['ime']; ?></span></span>
+		 <a href="logout.php">Odjava</a> 
+		 <a href="index.php">Meni</a>
+		 
+		 
+		</div>
+	
+	
+		<div class="navmenubar">
+		<nav>
+  		<ul>
+		  <a href="vesti_lista.php"><li><span>Vesti</span></li></a>
+		  <a href="dokumenti_lista.php"><li><span>Dokumenti</span></li></a>
+		  <a href="imenik_lista.php"><li><span>Imenik</span></li></a>
+		  <a href="misli_lista.php"><li><span>Misli</span></li></a>
+  		</ul>
+		</nav>
+		</div>
+		</body>
+			<?php
   }
 ?>
 </html>
