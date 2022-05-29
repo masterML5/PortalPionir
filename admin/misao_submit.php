@@ -46,9 +46,9 @@ else
 
   if (!$result) 
   {
-    echo "Greška u bazi prilikom izvršenja upita <pre>$query</pre>";
-   
+    
+    $_SESSION['status'] = '<div class="alert alert-danger">' . "Doslo je do greske, misao nije upload-ovana." . '</div>';
     exit;
   }
-  else echo "Uspešno"
+  $_SESSION['status'] = '<div class="alert alert-success">' . "Uspesno ste uneli novu misao!" . '</div>';
 ?>

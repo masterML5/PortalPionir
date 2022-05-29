@@ -43,50 +43,74 @@ include ('include_fns.php');
 </script>
 <!-- /TinyMCE -->
 
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/style.css">
 
-<div class="forma">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+<!-- <script src="js/status.js"></script>  -->
+	<title>Misao</title>
+</head>
+<body>
+<div id="status">
+                
+				<?php
+				if(isset($_SESSION['status'])){  
+					echo $_SESSION['status'];
+					unset($_SESSION['status']);
+				}
+				?>
+			
+</div>
 <div class="container contact-form">
             <div class="contact-image">
                 <img src="../img/pionir-logo.png" alt="rocket_contact"/>
             </div>
-            <form action="misao_submit.php" method="post" enctype="multipart/form-data">
-				<div class="naslov">
-					<h3>Unesite novu misao</h3>
-
-				</div>
+            <form method="post">
+                <h3>Unesi novu misao</h3>
                <div class="row">
                     <div class="col-md-6 form-opsti">
                         <div class="form-group">
 							<label for="naslov">Naslov</label>
                             <input type="text" name="naslov" class="form-control" placeholder="Naslov" value="" />
                         </div>
-						
                         <div class="form-group">
-						<label for="autor">Autor</label>
+							<label for="autor">Autor</label>
                             <input type="text" name="autor" class="form-control" placeholder="Autor" value="" />
                         </div>
-				
-                     
+                        <div class="form-group">
+							<label for="prikaz">Prikaz</label>
+							<div class="switch_box box_1">
+                            <input type="checkbox" class="switch_1" name="txtPhone" class="form-control" checked=checked value="Yes" />
+							</div>
+						</div>
                         
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
-						<textarea id="elm1" name="tekst" rows="15" cols="80" style="width: 80%"></textarea>  
+							<label for="tekst">Unesite tekst misli</label>
+                            <textarea id="elm1" name="tekst" class="form-control" rows="15" cols="80" ></textarea>
                         </div>
                     </div>
+					<div class="cold-md-6">
 					<div class="form-group">
-					<label for="prikaz">Prikazati</label>
-					<input type="checkbox" name="prikaz" checked="checked" value="Yes" />
-					</div>
-					<div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-                        </div>	
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Posalji" />
+                        </div>
                 </div>
             </form>
 </div>
-</div>
+</body>
+</html>
+
+	
+
+
+
+
