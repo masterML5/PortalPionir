@@ -4,7 +4,8 @@ include ('include_fns.php');
   if (isset($_REQUEST['misao']))
   {
     $misao = get_misao_record($_REQUEST['misao']);
-  }
+	
+}	
   
 ?>
 
@@ -50,54 +51,71 @@ include ('include_fns.php');
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<form action="misao_submit.php" method="post" enctype="multipart/form-data">
-<input type="hidden" name="misao" value="<?php echo $_REQUEST['misao'];?>">
-<input type="hidden" name="korisnik" value="<?php echo $_SESSION['auth_user'];?>">
-<table>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-<tr>
-  <td>Naslov<td>
-</tr>
-<tr>
-  <td><input size="80" name="naslov"
-             value="<?php echo $misao['naslov'];?>"></td>
-</tr>
-
-<tr>
-  <td>Autor<td>
-</tr>
-<tr>
-  <td><input size="80" name="autor"
-             value="<?php echo $misao['autor'];?>"></td>
-</tr>
-
-
-<tr>
-  <td>Tekst misli (možete uneti i HTML tagove)</td>
-</tr>
-<tr>
-  <td>
-  
-  <!-- <textarea cols="80" rows="7" name="tekst" wrap="virtual"><?php echo $misao['tekst'];?></textarea> -->
-	<!-- Gets replaced with TinyMCE, remember HTML in a textarea should be encoded -->
-	<textarea id="elm1" name="tekst" rows="15" cols="80" style="width: 80%">
-		<?php echo $misao['tekst'];?>
-	</textarea>  
-  
-  </td>
-</tr>
-
-<tr>
-  <td>Prikazati</td>
-</tr>
-<tr>
-  <td><input type="checkbox" name="prikaz" checked="checked" value="Yes" /></td>
-</tr>
-
-<tr>
-  <td align="center"><input type="submit" value="Snimi"></td>
-</tr>
-
-</table>
-</form>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+ <script src="js/status.js"></script>  
+	<title>Misao</title>
+</head>
+<body>
+<div id="status">
+                
+				<?php
+				if(isset($_SESSION['status'])){  
+					echo $_SESSION['status'];
+					unset($_SESSION['status']);
+				}
+				?>
+			
+</div>
+<div class="container contact-form">
+            <div class="contact-image">
+                <img src="../img/pionir-logo.png" alt="rocket_contact"/>
+            </div>
+            <form method="post" action="misao_submit.php"  enctype="multipart/form-data">
+			<input type="hidden" name="misao" value="<?php echo $_REQUEST['misao'];?>">
+			<input type="hidden" name="korisnik" value="<?php echo $_SESSION['auth_user'];?>">
+                <h3>Izmeni misao</h3>
+               <div class="row">
+                    <div class="col-md-6 form-opsti">
+                        <div class="form-group">
+							<label for="naslov">Naslov</label>
+                            <input type="text" name="naslov" class="form-control" placeholder="Naslov" value="<?php echo $misao['naslov'] ?>" />
+                        </div>
+                        <div class="form-group">
+							<label for="autor">Autor</label>
+                            <input type="text" name="autor" class="form-control" placeholder="Autor" value="<?php echo $misao['autor'] ?>" />
+                        </div>
+                        <div class="form-group">
+							<label for="prikaz">Prikaz</label>
+							<div class="switch_box box_1">
+                            <input type="checkbox"  id="checkbox" class="switch_1" name="prikaz" value="Yes"/>
+							</div>
+						</div>
+                        
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+							<label for="tekst">Unesite tekst misli</label>
+                            <textarea id="elm1" name="tekst" class="form-control" rows="15" cols="80" >
+							<?php echo $misao['tekst'] ?>
+							</textarea>
+                        </div>
+                    </div>
+					<div class="cold-md-6">
+					<div class="form-group">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Posalji" />
+                        </div>
+                </div>
+            </form>
+</div>
+</body>
+</html>

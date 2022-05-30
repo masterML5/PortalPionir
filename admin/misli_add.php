@@ -55,7 +55,7 @@ include ('include_fns.php');
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.css">
-<!-- <script src="js/status.js"></script>  -->
+ <script src="js/status.js"></script>  
 	<title>Misao</title>
 </head>
 <body>
@@ -73,7 +73,7 @@ include ('include_fns.php');
             <div class="contact-image">
                 <img src="../img/pionir-logo.png" alt="rocket_contact"/>
             </div>
-            <form method="post">
+            <form method="post"  enctype="multipart/form-data"  action="misao_submit.php" >
                 <h3>Unesi novu misao</h3>
                <div class="row">
                     <div class="col-md-6 form-opsti">
@@ -88,7 +88,7 @@ include ('include_fns.php');
                         <div class="form-group">
 							<label for="prikaz">Prikaz</label>
 							<div class="switch_box box_1">
-                            <input type="checkbox" class="switch_1" name="txtPhone" class="form-control" checked=checked value="Yes" />
+                            <input type="checkbox" id="checkbox" class="switch_1" name="txtPhone" class="form-control" checked="checked" value="Yes" />
 							</div>
 						</div>
                         
