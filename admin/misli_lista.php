@@ -12,8 +12,6 @@ include_once('include_fns.php');
 <META name="GENERATOR" content="MSHTML 9.00.8112.16443">
 </HEAD>
 
-
-<h2>Alfa-Plam - unos podataka za portal</h2>
 <?php
    
 
@@ -41,30 +39,94 @@ include_once('include_fns.php');
     echo $result->num_rows;
     echo ' (<a href="misli_add.php">Dodaj novu</a>)';
     echo '</p><br /><br />';
-    
+    ?>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+      <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styleMisliLista.css">
+<div class="container">
+<div class="row">
+	<div class="col-lg-12">
+		<div class="main-box clearfix">
+			<div class="table-responsive">
+				<table class="table user-list">
+					<thead>
+						<tr>
+							<th class="text-center"><span>Autor</span></th>
+							<th class="text-center"><span>Datum</span></th>
+							<th class="text-center"><span>Prikaz</span></th>
+							<th class="text-center"><span>Tekst</span></th>
+							<th class="text-center"><span>Izmeni/Obrisi</span></th>
+						</tr>
+          </thead>
+					<tbody>
+          <tr>
+          <?php
     if ($result->num_rows) 
     {
-      echo '<table border=1>';
-      echo '<tr><th>Naslov</th><th>Autor</th>';
-      echo '<th>Datum unosa</th><th>Tekst</th><th>Akcije</th></tr>';
+      
       while ($misli = $result->fetch_assoc()) 
       {
-        echo '<tr><td>';
-        echo $misli['naslov'];
-        echo '</td><td>';
-        echo $misli['autor'];
-        echo '</td><td>';
-        echo $misli['datum_unosa'];
-        echo '</td><td>';
-        echo $misli['tekst'];
-        echo '</td><td>';
-        {
-          echo '[<a href="misli_change.php?misao='.$misli['id'].'">Izmeni</a>] ';
-          echo '[<a href="misli_delete.php?misao='.$misli['id'].'">Briši</a>] ';
-        }
-        echo '</td></tr>';
-      }
-      echo '</table>';
-    }
-  }
+  
 ?>
+
+						
+							<td>
+								<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+								<p class="user-link"><?php  echo $misli['autor']; ?></p>
+								<!-- <span class="user-subhead">Admin</span> -->
+							</td>
+							<td>
+                <?php
+								  echo $misli['datum_unosa'];
+                  ?>
+							</td>
+							<td class="text-center">
+								<span class="label label-default">
+                  <?php
+                  if($misli['prikaz'] == 1){
+                    echo 'Da';
+                  }else
+                  echo 'Ne';
+                  ?>
+                </span>
+							</td>
+							<td class="text-center">
+							 <p>
+                 <?php 
+                 echo $misli['tekst'];
+                 ?>
+               </p>
+							</td>
+							<td style="width: 20%;">
+								
+								<a href="<?php echo 'misli_change.php?misao='.$misli['id'].' '?> " class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="<?php echo 'misli_delete.php?misao='.$misli['id'].' '?> " class="table-link danger">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</td>
+
+						</tr>
+            <?php
+}
+
+}
+} ?>
+            </tbody>
+				</table>
+			
+	</div>
+</div>
+</div>
+
+

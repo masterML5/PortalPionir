@@ -9,8 +9,8 @@ body{
     background: #fff !important; 
     margin-top: 50px !important;
     margin-bottom: 5% !important;
-    width: 60% !important;
-    height: fit-content;
+    width: 1000px !important;
+    height: fit-content; 
 }
 .contact-form .form-control{
     border-radius:1rem !important;
@@ -163,4 +163,8 @@ input[type="checkbox"].switch_1{
   
   input[type="checkbox"].switch_1:checked:after{
 	left: calc(100% - 1.5em);
+  }
+  .backBtn{
+      margin-top: 10px;
+      margin-left: 10px;
   }

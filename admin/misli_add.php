@@ -69,6 +69,9 @@ include ('include_fns.php');
 				?>
 			
 </div>
+<div class="backBtn">
+<a href="misli_lista.php"><button type="button" class="btn btn-info">Povratak nazad</button></a>
+</div>
 <div class="container contact-form">
             <div class="contact-image">
                 <img src="../img/pionir-logo.png" alt="rocket_contact"/>
@@ -88,7 +91,7 @@ include ('include_fns.php');
                         <div class="form-group">
 							<label for="prikaz">Prikaz</label>
 							<div class="switch_box box_1">
-                            <input type="checkbox" id="checkbox" class="switch_1" name="txtPhone" class="form-control" checked="checked" value="Yes" />
+                            <input type="checkbox" id="checkbox" class="switch_1" name="txtPhone" class="form-control" checked="checked" value="Yes" onclick="checkboxValue(this)" />
 							</div>
 						</div>
                         
@@ -101,7 +104,7 @@ include ('include_fns.php');
                     </div>
 					<div class="cold-md-6">
 					<div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Posalji" />
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Dodaj" />
                         </div>
                 </div>
             </form>

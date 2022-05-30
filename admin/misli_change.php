@@ -76,7 +76,11 @@ include ('include_fns.php');
 				?>
 			
 </div>
+<div class="backBtn">
+<a href="misli_lista.php"><button type="button" class="btn btn-info">Povratak nazad</button></a>
+</div>
 <div class="container contact-form">
+
             <div class="contact-image">
                 <img src="../img/pionir-logo.png" alt="rocket_contact"/>
             </div>
@@ -88,16 +92,27 @@ include ('include_fns.php');
                     <div class="col-md-6 form-opsti">
                         <div class="form-group">
 							<label for="naslov">Naslov</label>
-                            <input type="text" name="naslov" class="form-control" placeholder="Naslov" value="<?php echo $misao['naslov'] ?>" />
+                            <input type="text" name="naslov" class="form-control" placeholder="Naslov" value="<?php echo $misao['naslov'] ?>" required/>
                         </div>
                         <div class="form-group">
 							<label for="autor">Autor</label>
-                            <input type="text" name="autor" class="form-control" placeholder="Autor" value="<?php echo $misao['autor'] ?>" />
+                            <input type="text" name="autor" class="form-control" placeholder="Autor" value="<?php echo $misao['autor'] ?>" required/>
                         </div>
                         <div class="form-group">
 							<label for="prikaz">Prikaz</label>
 							<div class="switch_box box_1">
-                            <input type="checkbox"  id="checkbox" class="switch_1" name="prikaz" value="Yes"/>
+                            <input type="checkbox"  id="checkbox" class="switch_1" name="prikaz" value="
+							<?php 
+							if($misao['prikaz'] == 1)
+							{
+								echo 'Yes' .'"' . 'checked';
+							}
+							else
+							{
+								echo 'No' . '"';
+							}
+							?>
+							onclick="checkboxValue(this)"/>
 							</div>
 						</div>
                         
@@ -105,14 +120,14 @@ include ('include_fns.php');
                     <div class="col-md-12">
                         <div class="form-group">
 							<label for="tekst">Unesite tekst misli</label>
-                            <textarea id="elm1" name="tekst" class="form-control" rows="15" cols="80" >
+                            <textarea id="elm1" name="tekst" class="form-control" rows="15" cols="80" required >
 							<?php echo $misao['tekst'] ?>
 							</textarea>
                         </div>
                     </div>
 					<div class="cold-md-6">
 					<div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Posalji" />
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Izmeni" />
                         </div>
                 </div>
             </form>

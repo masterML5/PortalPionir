@@ -61,20 +61,26 @@ else
   if (!$result) 
   {
     if($b == 1)
-    {$_SESSION['status'] = '<div class="alert alert-danger">' . "Doslo je do greske, misao nije update-ovana." . '</div>';}
+    {
+      $_SESSION['status'] = '<div class="alert alert-danger">' . "Doslo je do greske, misao nije update-ovana." . '</div>';
+    header("Location: misli_change.php?misao=".$misao);
+    }
     else if($b == 2)
     {
     $_SESSION['status'] = '<div class="alert alert-danger">' . "Doslo je do greske, misao nije upload-ovana." . '</div>';
+    header("Location: misli_add.php");
     }
     exit;
   }
   if($b == 1)
   {
   $_SESSION['status'] = '<div class="alert alert-success">' . "Uspesno ste izmenili misao!" . '</div>';
+  header("Location: misli_change.php?misao=".$misao);
   } 
   else if($b == 2)
   {
     $_SESSION['status'] = '<div class="alert alert-success">' . "Uspesno ste uneli novu misao!" . '</div>';
+    header("Location: misli_add.php");
   }
 
 ?>

@@ -5,3 +5,10 @@ setTimeout(function(){
 },
 5000);
 
+const checkboxValue = checkbox =>{
+    let prikaz = document.getElementById('checkbox');
+    const output = checkbox.checked ? 'Yes' : 'No';
+    prikaz.value = output; 
+
+}
+
