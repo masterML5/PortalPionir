@@ -13,8 +13,10 @@ include_once('include_fns.php');
 </HEAD>
 
 
-<h2>Alfa-Plam - unos podataka za portal</h2>
+
 <?php
+  
+
   
 
   if (!check_auth_user()) 
@@ -28,46 +30,135 @@ include_once('include_fns.php');
 	mysqli_set_charset ( $handle , 'utf8');
 	
     $korisnik = get_korisnik_record($_SESSION['auth_user']);
-
-    echo '<p>Dobrodošli, '.$korisnik['ime'];
-    echo ' (<a href="logout.php">Odjava</a>) (<a href="index.php">Meni</a>) </p>';
-    echo '<p>';
-
     $query = 'select * from vesti where uneo = \''.
-           $_SESSION['auth_user'].'\' order by datum desc, redosled';
-    $result = $handle->query($query);
+    $_SESSION['auth_user'].'\' order by datum desc, redosled';
+$result = $handle->query($query);
 
-    echo 'Vaše vesti: ';
-    echo $result->num_rows;
-    echo ' (<a href="vesti_add.php">Dodaj novu</a>)';
-    echo '</p><br /><br />';
-    
+
+    ?>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+<link rel="stylesheet" href="css/styleMisliLista.css">
+<header class="header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+        <div class="container">
+            <img src="../img/pionir-logo.png"class="navbar-brand" alt="">
+            <span class="vase_misli">Vaše vesti: <?php  echo $result->num_rows; ?></span>
+            <a href="vesti_add.php"><button class="btn btn-warning dodaj">Dodaj novu</button></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto navbar-right">
+                    <a href="index.php"><button class="btn btn-primary">Meni</button></a>
+                   <a href="logout.php"><button class="btn btn-danger">Odjava</button></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+<div class="row">
+	<div class="col-lg-12">
+		<div class="main-box clearfix">
+			<div class="table-responsive">
+				<table class="table user-list">
+					<thead>
+						<tr>
+              <th class="text-center"><span>Uneo</span></th>
+              <th class="text-center"><span>Datum</span></th>
+							<th class="text-center"><span>Kategorija</span></th>
+              <th class="text-center"><span>Prikaz</span></th>
+							<th class="text-center"><span>Naslov</span></th>
+              <th class="text-center"><span>Skraceni tekst</span></th>
+							<th class="text-center"><span>Tekst</span></th>
+							<th class="text-center"><span>Izmeni/Obrisi</span></th>
+						</tr>
+          </thead>
+					<tbody>
+          <tr>
+          <?php
     if ($result->num_rows) 
     {
-      echo '<table border=1>';
-      echo '<tr><th>Datum</th><th>Kategorija</th>';
-      echo '<th>Naslov</th><th>Skraćeni tekst</th><th>Tekst</th><th>Akcije</th></tr>';
+      
       while ($vesti = $result->fetch_assoc()) 
       {
-        echo '<tr><td align=center>';
-		echo date('d.m.Y', strtotime($vesti['datum']));
-        echo '</td><td align=center>';
-        echo $vesti['kategorija'];
-        echo '</td><td>';
-        echo $vesti['naslov'];
-        echo '</td><td>';
-        echo $vesti['tekst'];
-        echo '</td><td>';
-        echo $vesti['tekst_ceo'];
-        echo '</td><td>';
-
-        {
-          echo '[<a href="vesti_change.php?vest='.$vesti['id'].'">Izmeni</a>] ';
-          echo '[<a href="vesti_delete.php?vest='.$vesti['id'].'">Briši</a>] ';
-        }
-        echo '</td></tr>';
-      }
-      echo '</table>';
-    }
-  }
+  
 ?>
+
+                <td class="text-center">
+								<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+								<p class="user-link"><?php  echo $vesti['uneo']; ?></p>
+								<!-- <span class="user-subhead">Admin</span> -->
+							</td>
+            <td class="text-center">
+            <?php
+              $dateString = $vesti['datum_unosa'];
+              $date = strtotime($dateString);
+              echo date('d-M-Y', $date);
+
+                 ?>
+              </td>
+							<td class="text-center">
+								
+								<p class="user-link autor"><?php  echo $vesti['kategorija']; ?></p>
+								<!-- <span class="user-subhead">Admin</span> -->
+							</td>
+							<td class="text-center">
+								<span class="label labelstatus">
+                  <?php
+                  if($vesti['prikaz'] == 1){
+                    echo 'Da';
+                  }else
+                  echo 'Ne';
+                  ?>
+                </span>
+							</td>
+              <td class="text-center">
+              <p class="user-link autor"><?php  echo $vesti['naslov']; ?></p>
+              </td>
+              <td class="text-center">
+                <p class="user-link autor">
+                  <?php
+                  echo $vesti['tekst']
+                  ?>
+                </p>
+              </td>
+							<td class="text-center tekst">
+							 <p>
+                 <?php 
+                 echo $vesti['tekst_ceo'];
+                 ?>
+               </p>
+							</td>
+							<td class="text-center" style="width: 20%;">
+								
+								<a href="<?php echo 'vesti_change.php?misao='.$vesti['id'].' '?> " class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="<?php echo 'vesti_delete.php?misao='.$vesti['id'].' '?> " class="table-link danger remove" onClick="return confirm('Da li ste sigurni da zelite da obrisete misao?')">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</td>
+
+						</tr>
+            <?php
+}
+
+}
+} ?>
+            </tbody>
+				</table>
+			
+	</div>
+</div>
+</div>
+<script src="js/status.js"></script>

@@ -9,6 +9,7 @@ include_once('include_fns.php');
       echo "Niste prijavljeni";
   else
   {
+    
     $query = "delete from misli where id = $misao";
     $result = $handle->query($query);
 	echo "probaj 4";
