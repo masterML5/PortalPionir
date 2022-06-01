@@ -18,7 +18,9 @@ body{margin-top:20px;}
 	font-size: 0.875em;
 	font-style: italic;
 }
-
+.row{
+	width: fit-content;
+}
 /* TABLES */
 .table {
     border-collapse: separate;
@@ -194,10 +196,12 @@ td.tekst{
 }
 .navbar {
 	background-color:  #e3f2fd;
+	
 }
 .navbar img {
 	width: 125px;
 	height: 60px;
+	margin-left: 10px;
 }
 .text-small {
     font-size: 0.9rem !important;
@@ -239,4 +243,14 @@ span.vase_misli{
 .autor{
 	margin: 0 auto !important;
 	padding-top: 0px !important;
+}
+#myInput {
+	width: 20%;
+}
+#searchlabel {
+	padding: 5px;
+    padding-right: 10px;
+}
+.pretraga{
+	display: flex;
 }

@@ -60,7 +60,12 @@ include_once('include_fns.php');
 		</header>
 	
 		<div class="navmenubar">
-		<nav>
+		<nav id="lista-select">
+		<div class="d-flex justify-content-center">
+					<div class="brand_logo_container">
+						<img src="../img/pionir-logo.png" class="brand_logo" alt="Logo">
+					</div>
+				</div>
   		<ul>
 		  <a href="vesti_lista.php"><li><span>Vesti</span></li></a>
 		  <a href="dokumenti_lista.php"><li><span>Dokumenti</span></li></a>

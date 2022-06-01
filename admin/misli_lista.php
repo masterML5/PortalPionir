@@ -60,7 +60,12 @@ include_once('include_fns.php');
 	<div class="col-lg-12">
 		<div class="main-box clearfix">
 			<div class="table-responsive">
-				<table class="table user-list">
+      <div class="pretraga">
+
+        <label id="searchlabel" for="myInput">Pretraži :</label>
+        <input class="form-control mr-sm-2" type="search" id="myInput" onkeyup="myFunction()" placeholder="Pretraga" aria-label="Search">
+      </div>
+				<table class="table user-list" id="myTable">
 					<thead>
 						<tr>
               <th class="text-center"><span>Uneo</span></th>

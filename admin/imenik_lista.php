@@ -13,8 +13,7 @@ include_once('include_fns.php');
 </HEAD>
 
 <body>
-<font size="2">
-<h2>Alfa-Plam - unos podataka za portal</h2>
+
 <?php
    
 
@@ -31,68 +30,143 @@ include_once('include_fns.php');
 	
     $korisnik = get_imenik_record($_SESSION['auth_user']);
 
-    echo '<p>Dobrodošli, ';
-    echo ' (<a href="logout.php">Odjava</a>) (<a href="index.php">Meni</a>) </p>';
-    echo '<p>';
+
 
     $query = 'select * from imenik where uneo = \''.
            $_SESSION['auth_user'].'\' order by datum_unosa desc';
 
     $result = $handle->query($query);
 
-    echo 'Pregled imenika: ';
-    echo $result->num_rows;
-    echo ' (<a href="imenik_add.php">Dodaj novi zapis</a>)';
-    echo '</p><br /><br />';
-    
+  ?>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+<link rel="stylesheet" href="css/styleMisliLista.css">
+<header class="header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+        <div class="container">
+            <img src="../img/pionir-logo.png"class="navbar-brand" alt="">
+            <span class="vase_misli">Vaš imenik: <?php  echo $result->num_rows; ?></span>
+            <a href="imenik_add.php"><button class="btn btn-warning dodaj">Dodaj novi kontakt</button></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto navbar-right">
+                    <a href="index.php"><button class="btn btn-primary">Meni</button></a>
+                   <a href="logout.php"><button class="btn btn-danger">Odjava</button></a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+<div class="row">
+	<div class="col-lg-12">
+		<div class="main-box clearfix">
+			<div class="table-responsive">
+        <div class="pretraga">
+
+          <label id="searchlabel" for="myInput">Pretraži :</label>
+          <input class="form-control mr-sm-2" type="search" id="myInput" onkeyup="myFunction()" placeholder="Pretraga" aria-label="Search">
+        </div>
+				<table class="table user-list" id="myTable">
+					<thead>
+						<tr>             
+              <th class="text-center"><span>Šifra radnika</span></th>
+              <th class="text-center"><span>Ime</span></th>
+							<th class="text-center"><span>Prezime</span></th>
+							<th class="text-center"><span>Naziv OJ</span></th>
+							<th class="text-center"><span>Email</span></th>
+							<th class="text-center"><span>Broj mobilnog</span></th>
+							<th class="text-center"><span>Broj fisknog telefona</span></th>
+							<th class="text-center"><span>Broj lokala</span></th>
+							<th class="text-center"><span>Lice/Služba</span></th>
+							<th class="text-center"><span>Naziv firme</span></th>
+							<th class="text-center"><span>Izmeni/Obrisi</span></th>
+						</tr>
+          </thead>
+					<tbody>
+          <tr>
+          <?php
     if ($result->num_rows) 
     {
-      echo '<table border=1>';
-      echo '<tr><th>Šifra radnika</th><th>Prezime</th><th>Ime</th><th>Šifra OJ</th><th>Naziv OJ</th><th>E-mail</th><th>Broj mobilnog telefona</th><th>Broj fiksnog telefona</th><th>Broj lokala</th><th>Lice/služba</th><th>Naziv firme</th>';
-      echo '<th>Datum unosa</th><th>Datum izmene</th><th>Uneo</th><th>Akcije</th></tr>';
+      
       while ($imenik = $result->fetch_assoc()) 
       {
-        echo '<tr><td>';
-        echo $imenik['sifrad'];
-        echo '</td><td>';
-        echo $imenik['prezime'];
-        echo '</td><td>';
-        echo $imenik['ime'];
-        echo '</td><td>';
-        echo $imenik['sifoj'];
-        echo '</td><td>';
-        echo $imenik['nazoj'];
-        echo '</td><td>';
-        echo $imenik['email'];
-        echo '</td><td>';
-        echo $imenik['tel_mobilni'];
-        echo '</td><td>';
-        echo $imenik['tel_fiksni'];
-        echo '</td><td>';
-        echo $imenik['tel_lokal'];
-        echo '</td><td>';		
-        echo $imenik['lice_sluzba'];
-        echo '</td><td>';		
-        echo $imenik['firma_naziv'];
-        echo '</td><td>';		
-        echo $imenik['datum_unosa'];
-        echo '</td><td>';
-        echo $imenik['datum_izmene'];
-        echo '</td><td>';
-
-        echo $imenik['uneo'];
-        echo '</td><td>';
-        {
-          echo '[<a href="imenik_change.php?imenik='.$imenik['id'].'">Izmeni</a>] ';
-          echo '[<a href="imenik_delete.php?imenik='.$imenik['id'].'">Briši</a>] ';
-        }
-        echo '</td></tr>';
-      }
-      echo '</table>';
-    }
-  }
- 
+  
 ?>
 
-</font>  
+                <td class="text-center">
+								
+								<p class="user-link autor"><?php  echo $imenik['sifrad']; ?></p>
+								<!-- <span class="user-subhead">Admin</span> -->
+							</td>
+          
+							<td class="text-center">
+								
+								<p class="user-link autor"><?php  echo $imenik['ime']; ?></p>
+								<!-- <span class="user-subhead">Admin</span> -->
+							</td>
+							<td class="text-center">
+              <p class="user-link autor"><?php  echo $imenik['prezime']; ?></p>
+							</td>
+              
+							<td class="text-center">
+							 <p class="user-link autor">
+                 <?php 
+                 echo $imenik['nazoj'];
+                 ?>
+               </p>
+							</td>
+              <td class="text-center">
+              <p class="user-link autor"><?php  echo $imenik['email']; ?></p>
+              </td>
+              <td class="text-center">
+              <p class="user-link autor"><?php  echo $imenik['tel_mobilni']; ?></p>
+              </td>
+              <td class="text-center">
+              <p class="user-link autor"><?php  echo $imenik['tel_fiksni']; ?></p>
+              </td>
+              <td class="text-center">
+              <p class="user-link autor"><?php  echo $imenik['tel_lokal']; ?></p>
+              </td>
+              <td class="text-center">
+              <p class="user-link autor"><?php  echo $imenik['lice_sluzba']; ?></p>
+              </td>
+              <td class="text-center">
+              <p class="user-link autor"><?php  echo $imenik['firma_naziv']; ?></p>
+              </td>
+							<td class="text-center" style="width: 20%;">
+								
+								<a href="<?php echo 'imenik_change.php?imenik='.$imenik['id'].' '?> " class="table-link">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+								<a href="<?php echo 'imenik_delete.php?imenik='.$imenik['id'].' '?> " class="table-link danger remove" onClick="return confirm('Da li ste sigurni da zelite da obrisete misao?')">
+									<span class="fa-stack">
+										<i class="fa fa-square fa-stack-2x"></i>
+										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+									</span>
+								</a>
+							</td>
+
+						</tr>
+            <?php
+}
+
+}
+} ?>
+            </tbody>
+				</table>
+			
+	</div>
+</div>
+</div>
+<script src="js/status.js"></script>
+
+
 </body>

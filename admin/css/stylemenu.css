@@ -9,10 +9,47 @@ body{
 	justify-content: center;
 
 }
+nav {
+	margin-top: -250px;
+	
+}
+nav#lista-select{
+	height: 400px;
+    width: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #f39c12;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    -webkit-box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+.brand_logo_container {
+	position: absolute;
+	height: 100px;
+	width: 200px;
+	top: -60px;
+	border-radius: 50%;
+	background: #60a3bc;
+	padding: 3px;
+	text-align: center;
+}
+.brand_logo {
+	height: 100px;
+	width: 200px;
+	border-radius: 50%;
+	
+}
 
 nav ul {
 	list-style-type: none;
 	padding: 0;
+	margin-top: 40px;
 }
 
 nav ul li {
@@ -60,9 +97,12 @@ nav ul a:hover li span{
     color: white;
 }
 .navbar{
-	margin: 15px;
+	/* margin: 15px; */
 	font-size: 20px;
     position: sticky;
+	width: fit-content;
+	margin: 0 auto;
+	margin-top: 10px;	
     
 }
 .navbar a{
@@ -70,6 +110,7 @@ nav ul a:hover li span{
 	margin: 10px;
 	color: #bc3e33;
     font-size: 25px;
+
 	
 }
 span#korisnik{
@@ -106,4 +147,7 @@ button.dodaj{
 span.vase_misli{
 	color: #262525;
 	font-size: 18px;
+}
+.navbar .container img.navbar-brand{
+	margin-left: 10px;
 }

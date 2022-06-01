@@ -66,7 +66,12 @@ include_once('include_fns.php');
 	<div class="col-lg-12">
 		<div class="main-box clearfix">
 			<div class="table-responsive">
-				<table class="table user-list">
+      <div class="pretraga">
+
+        <label id="searchlabel" for="myInput">Pretraži :</label>
+        <input class="form-control mr-sm-2" type="search" id="myInput" onkeyup="myFunction()" placeholder="Pretraga" aria-label="Search">
+      </div>
+				<table class="table user-list" id="myTable">
 					<thead>
 						<tr>
               <th class="text-center"><span>Uneo</span></th>
@@ -129,13 +134,13 @@ include_once('include_fns.php');
 							</td>
 							<td class="text-center" style="width: 20%;">
 								
-								<a href="<?php echo 'dokumenti_change.php?misao='.$dokumenti['id'].' '?> " class="table-link">
+								<a href="<?php echo 'dokumenti_change.php?dokument='.$dokumenti['id'].' '?> " class="table-link">
 									<span class="fa-stack">
 										<i class="fa fa-square fa-stack-2x"></i>
 										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
 									</span>
 								</a>
-								<a href="<?php echo 'dokumenti_delete.php?misao='.$dokumenti['id'].' '?> " class="table-link danger remove" onClick="return confirm('Da li ste sigurni da zelite da obrisete misao?')">
+								<a href="<?php echo 'dokumenti_delete.php?dokument='.$dokumenti['id'].' '?> " class="table-link danger remove" onClick="return confirm('Da li ste sigurni da zelite da obrisete misao?')">
 									<span class="fa-stack">
 										<i class="fa fa-square fa-stack-2x"></i>
 										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>

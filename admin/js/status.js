@@ -30,7 +30,43 @@ for (let i = 0; i < rows.length; i++){
 }
 
 
+function myFunction() {
+    // Declare variables
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toLowerCase();
+    filter2 = filter.trim();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    colslen = document.getElementById('myTable').rows[0].cells.length
 
+  
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+        for(j=0; j<colslen; j++){
+      td = tr[i].getElementsByTagName("td")[j];
+
+           
+        
+      if (td) {
+        
+        txtValue = td.innerText.toLowerCase();
+        
+        txtValue2 = txtValue.trim();
+
+
+        if (txtValue2.indexOf(filter2) > -1){
+          tr[i].style.display = "";
+        
+        break;
+        } else {
+          tr[i].style.display = "none";
+      
+        }
+       }
+    }
+}
+  }
 
 // for (let i = 0; i < rows.length; i++) {
 // if(str == 'Da'){

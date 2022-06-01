@@ -33,7 +33,7 @@ include_once('include_fns.php');
 				  tel_mobilni   = '$tel_mobilni',
 				  tel_fiksni    = '$tel_fiksni',
 				  tel_lokal     = '$tel_lokal',
-				  lice_sluzba   = $lice_sluzba,
+				  lice_sluzba   = '$lice_sluzba',
 				  firma_naziv   = '$firma_naziv',				  
                   datum_izmene  =  now()
               where id = $imenik";
@@ -43,7 +43,7 @@ include_once('include_fns.php');
     $query = "insert into imenik 
                 (sifrad, prezime, ime, sifoj, nazoj, email, tel_mobilni, tel_fiksni, tel_lokal, lice_sluzba, firma_naziv, uneo, datum_unosa)
               values 
-				('$sifrad', '$prezime', '$ime', '$sifoj', '$nazoj', '$email', '$tel_mobilni', '$tel_fiksni', '$tel_lokal', $lice_sluzba, '$firma_naziv', '".
+				('$sifrad', '$prezime', '$ime', '$sifoj', '$nazoj', '$email', '$tel_mobilni', '$tel_fiksni', '$tel_lokal', '$lice_sluzba', '$firma_naziv', '".
                $_SESSION['auth_user']."', now())";
   }
 

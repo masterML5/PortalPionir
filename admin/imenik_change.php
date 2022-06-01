@@ -132,8 +132,13 @@ include ('include_fns.php');
   <td>Lice/služba (0/1)</td>
 </tr>
 <tr>
-  <td><input size="80" name="lice_sluzba"
-             value="<?php echo $imenik['lice_sluzba'];?>"></td>
+<td>
+	<select name="lice_sluzba">
+		<option value="Lice" <?php if ($imenik['lice_sluzba']=='Lice') echo 'selected';?> >Lice</option>
+		<option value="Sluzba" <?php if ($imenik['lice_sluzba']=='Sluzba') echo 'selected';?> >Sluzba</option>
+		<option value="Ostalo" <?php if ($imenik['lice_sluzba']=='Ostalo') echo 'selected';?> >Ostalo</option>
+	</select>
+	</td>
 </tr>
 
 <tr>
@@ -142,8 +147,9 @@ include ('include_fns.php');
 <tr>
   <td>
 	<select name="firma_naziv">
-		<option value="ALFA-PLAM" <?php if ($imenik['firma_naziv']=='ALFA-PLAM') echo 'selected';?> >ALFA-PLAM</option>
-		<option value="FOS" <?php if ($imenik['firma_naziv']=='FOS') echo 'selected';?> >FOS</option>
+    <option value="Pionir Fabrika Subotica" <?php if ($imenik['firma_naziv']=='Pionir Fabrika Subotica') echo 'selected';?>>Pionir Fabrika Subotica</option>
+		<option value="Pionir Hissar" <?php if ($imenik['firma_naziv']=='Pionir Hissar') echo 'selected';?>>Pionir Hissar</option>
+		<option value="Pionir Paracin" <?php if ($imenik['firma_naziv']=='Pionir Paracin') echo 'selected';?>>Pionir Paracin</option>
 	</select>
 	</td>
 </tr>

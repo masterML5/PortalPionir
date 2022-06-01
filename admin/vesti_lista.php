@@ -64,7 +64,12 @@ $result = $handle->query($query);
 	<div class="col-lg-12">
 		<div class="main-box clearfix">
 			<div class="table-responsive">
-				<table class="table user-list">
+      <div class="pretraga">
+
+        <label id="searchlabel" for="myInput">Pretraži :</label>
+        <input class="form-control mr-sm-2" type="search" id="myInput" onkeyup="myFunction()" placeholder="Pretraga" aria-label="Search">
+      </div>
+				<table class="table user-list" id="myTable">
 					<thead>
 						<tr>
               <th class="text-center"><span>Uneo</span></th>
@@ -135,13 +140,13 @@ $result = $handle->query($query);
 							</td>
 							<td class="text-center" style="width: 20%;">
 								
-								<a href="<?php echo 'vesti_change.php?misao='.$vesti['id'].' '?> " class="table-link">
+								<a href="<?php echo 'vesti_change.php?vest='.$vesti['id'].' '?> " class="table-link">
 									<span class="fa-stack">
 										<i class="fa fa-square fa-stack-2x"></i>
 										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
 									</span>
 								</a>
-								<a href="<?php echo 'vesti_delete.php?misao='.$vesti['id'].' '?> " class="table-link danger remove" onClick="return confirm('Da li ste sigurni da zelite da obrisete misao?')">
+								<a href="<?php echo 'vesti_delete.php?vest='.$vesti['id'].' '?> " class="table-link danger remove" onClick="return confirm('Da li ste sigurni da zelite da obrisete misao?')">
 									<span class="fa-stack">
 										<i class="fa fa-square fa-stack-2x"></i>
 										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>

@@ -113,10 +113,14 @@ include ('include_fns.php');
 
 
 <tr>
-  <td>Lice/služba (0/1)</td>
+  <td>Lice/služba</td>
 </tr>
 <tr>
-  <td><input size="80" name="lice_sluzba"></td>
+  <td><select name="lice_sluzba">
+		<option value="Lice">Lice</option>
+		<option value="Sluzba">Sluzba</option>
+		<option value="Ostalo">Ostalo</option>
+	</td>
 </tr>
 
 <tr>
