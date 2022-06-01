@@ -140,7 +140,7 @@ include_once('include_fns.php');
 										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
 									</span>
 								</a>
-								<a href="<?php echo 'dokumenti_delete.php?dokument='.$dokumenti['id'].' '?> " class="table-link danger remove" onClick="return confirm('Da li ste sigurni da zelite da obrisete misao?')">
+								<a href="<?php echo 'dokumenti_delete.php?dokument='.$dokumenti['id'].' '?> " class="table-link danger remove" onClick="return confirm('Da li ste sigurni da zelite da obrisete dokument?')">
 									<span class="fa-stack">
 										<i class="fa fa-square fa-stack-2x"></i>
 										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>

@@ -124,7 +124,7 @@ $result = $handle->query($query);
               <td class="text-center">
               <p class="user-link autor"><?php  echo $vesti['naslov']; ?></p>
               </td>
-              <td class="text-center">
+              <td class="text-center tekst">
                 <p class="user-link autor">
                   <?php
                   echo $vesti['tekst']
@@ -146,7 +146,7 @@ $result = $handle->query($query);
 										<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
 									</span>
 								</a>
-								<a href="<?php echo 'vesti_delete.php?vest='.$vesti['id'].' '?> " class="table-link danger remove" onClick="return confirm('Da li ste sigurni da zelite da obrisete misao?')">
+								<a href="<?php echo 'vesti_delete.php?vest='.$vesti['id'].' '?> " class="table-link danger remove" onClick="return confirm('Da li ste sigurni da zelite da obrisete vest?')">
 									<span class="fa-stack">
 										<i class="fa fa-square fa-stack-2x"></i>
 										<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
