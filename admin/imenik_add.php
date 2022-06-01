@@ -41,105 +41,94 @@ include ('include_fns.php');
 
 </script>
 <!-- /TinyMCE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="css/style.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container contact-form">
+            <div class="contact-image">
+                <img src="../img/pionir-logo.png" alt="rocket_contact"/>
+            </div>
+            <form  action="imenik_submit.php" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="korisnik" value="<?php echo $_SESSION['auth_user'];?>">
+                <h3>Unos u imenik</h3>
+               <div class="row">
+                    <div class="col-md-6 imenik-forma">
+                        <div class="form-group">
+							<label for="sifrad">Sifra radnika</label>
+                            <input type="text" name="sifrad" class="form-control imenik_input" placeholder="Sifra radnika" value="" required />
+                        </div>
+                        <div class="form-group">
+							<label for="prezime">Prezime</label>
+                            <input type="text" name="prezime" class="form-control imenik_input" placeholder="Prezime " value=""  required/>
+                        </div>
+                        <div class="form-group">
+							<label for="ime">Ime</label>
+                            <input type="text" name="ime" class="form-control imenik_input" placeholder="Ime" value="" required/>
+                        </div>
+						<div class="form-group">
+							<label for="sifoj">Sifra OJ</label>
+                            <input type="text" name="sifoj" class="form-control imenik_input" placeholder="Sifra OJ" value="" required/>
+                        </div>
+						<div class="form-group">
+							<label for="nazoj">Naziv OJ</label>
+                            <input type="text" name="nazoj" class="form-control imenik_input" placeholder="Naziv OJ" value="" required/>
+                        </div>
+						<div class="form-group">
+							<label for="email">Email</label>
+                            <input type="text" name="email" class="form-control imenik_input" placeholder="Email" value="" required/>
+                        </div>
+						<div class="form-group">
+							<label for="tel_mobilni">Mobilni telefon</label>
+                            <input type="text" name="tel_mobilni" class="form-control imenik_input" placeholder="Mobilni telefon" value="" required/>
+                        </div>
+						<div class="form-group">
+							<label for="tel_fiksni">Fiksni telefon</label>
+                            <input type="text" name="tel_fiksni" class="form-control imenik_input" placeholder="Fiksni telefon" value="" />
+                        </div>
+					
+						<div class="form-group">
+							<label for="tel_lokal">Telefon lokal</label>
+                            <input type="text" name="tel_lokal" class="form-control imenik_input" placeholder="Telefon lokal" value="" />
+                        </div>
+						<div class="form-group">
+						<label for="lice_sluzba">Lice/Služba</label>
+						<select name="lice_sluzba" class="form-control imenik_input  imenik_select text-center" required>
+							<option value="Lice">Lice</option>
+							<option value="Služba">Služba</option>
+							<option value="Ostalo">Ostalo</option>
+						</select>
+                        </div>
+						<div class="form-group">
+						<label for="firma_naziv">Naziv firme</label>
+						<select name="firma_naziv" class="form-control imenik_input imenik_select text-center" required>
+							<option value="Pionir Subotica">Pionir Subotica</option>
+							<option value="Pionir Hissar">Pionir Hissar</option>
+							<option value="Pionir Paracin">Pionir Paracin</option>
+							<option value="Pionir Beograd">Pionir Beograd</option>
+						</select>
+                        </div>
+					
+                      
+                    </div>
+					<div class="imenik_btn">
+					<input type="submit" class="btnContact imenik_btn" value="Unesi">
+					</div>
+                </div>
+            </form>
+</div>
+</body>
+</html>
 
 
-
-<form action="imenik_submit.php" method="post" enctype="multipart/form-data">
-<input type="hidden" name="korisnik" value="<?php echo $_SESSION['auth_user'];?>">
-<table>
-
-<tr>
-  <td>Šifra radnika<td>
-</tr>
-<tr>
-  <td><input size="80" name="sifrad"></td>
-</tr>
-
-<tr>
-  <td>Prezime<td>
-</tr>
-<tr>
-  <td><input size="80" name="prezime"></td>
-</tr>
-
-<tr>
-  <td>Ime<td>
-</tr>
-<tr>
-  <td><input size="80" name="ime"></td>
-</tr>
-
-<tr>
-  <td>Šifra OJ<td>
-</tr>
-<tr>
-  <td><input size="80" name="sifoj"></td>
-</tr>
-
-<tr>
-  <td>Naziv OJ<td>
-</tr>
-<tr>
-  <td><input size="80" name="nazoj"></td>
-</tr>
-
-<tr>
-  <td>E-mail<td>
-</tr>
-<tr>
-  <td><input size="80" name="email"></td>
-</tr>
-
-<tr>
-  <td>Broj mobilnog telefona<td>
-</tr>
-<tr>
-  <td><input size="80" name="tel_mobilni"></td>
-</tr>
-
-<tr>
-  <td>Broj fiksnog telefona<td>
-</tr>
-<tr>
-  <td><input size="80" name="tel_fiksni"></td>
-</tr>
-
-<tr>
-  <td>Broj lokala<td>
-</tr>
-<tr>
-  <td><input size="80" name="tel_lokal"></td>
-</tr>
-
-
-<tr>
-  <td>Lice/služba</td>
-</tr>
-<tr>
-  <td><select name="lice_sluzba">
-		<option value="Lice">Lice</option>
-		<option value="Sluzba">Sluzba</option>
-		<option value="Ostalo">Ostalo</option>
-	</td>
-</tr>
-
-<tr>
-  <td>Naziv firme</td>
-</tr>
-<tr>
-  <td>
-	<select name="firma_naziv">
-		<option value="Pionir Fabrika Subotica">Pionir Fabrika Subotica</option>
-		<option value="Pionir Hissar">Pionir Hissar</option>
-		<option value="Pionir Paracin">Pionir Paracin</option>
-	</select>
-	</td>
-</tr>
-
-
-<tr>
-  <td align="center"><input type="submit" value="Snimi"></td>
-</tr>
-
-</table>
-</form>

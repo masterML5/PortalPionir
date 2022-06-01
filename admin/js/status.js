@@ -1,10 +1,10 @@
-
+// poruka za insert fade out
 setTimeout(function(){
     let status = document.getElementById('status');
     status.style.display = 'none';
 },
 5000);
-
+// checkbox value
 const checkboxValue = checkbox =>{
     let prikaz = document.getElementById('checkbox');
     const output = checkbox.checked ? 'Yes' : 'No';
@@ -13,7 +13,7 @@ const checkboxValue = checkbox =>{
 }
 
 
-
+//status liste izgled
 rows = document.getElementsByTagName('tr');
 for (let i = 0; i < rows.length; i++){
     
@@ -29,7 +29,7 @@ for (let i = 0; i < rows.length; i++){
      }
 }
 
-
+// pretraga za liste
 function myFunction() {
     // Declare variables
     var input, filter, table, tr, td, i, txtValue;
@@ -43,7 +43,7 @@ function myFunction() {
   
     // Loop through all table rows, and hide those who don't match the search query
     for (i = 0; i < tr.length; i++) {
-        for(j=0; j<colslen; j++){
+        for(j = 0; j < colslen; j++){
       td = tr[i].getElementsByTagName("td")[j];
 
            

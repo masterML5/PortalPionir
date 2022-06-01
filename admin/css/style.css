@@ -82,6 +82,17 @@ body{
 .form-control{
     width: max-content;
 }
+.imenik_input {
+    width: 200px;
+
+}
+.imenik_btn{
+    width: 100%;
+    text-align: center;
+}
+.imenik_select{
+    margin-left: 0;
+}
 div.alert.alert-success{
     margin: 0 auto;
     width: fit-content;
@@ -167,4 +178,9 @@ input[type="checkbox"].switch_1{
   .backBtn{
       margin-top: 10px;
       margin-left: 10px;
+  }
+  .imenik-forma{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
   }
