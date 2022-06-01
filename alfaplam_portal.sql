@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 29, 2022 at 11:09 PM
+-- Generation Time: Jun 01, 2022 at 03:56 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -41,6 +41,14 @@ CREATE TABLE `dokumenti` (
   `redosled` int(11) NOT NULL DEFAULT 0 COMMENT 'redosled prikazivanja'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='Tabela vesti iz svih kategorija';
 
+--
+-- Dumping data for table `dokumenti`
+--
+
+INSERT INTO `dokumenti` (`id`, `datum`, `kategorija`, `naslov`, `tekst`, `slika`, `uneo`, `datum_unosa`, `datum_izmene`, `prikaz`, `redosled`) VALUES
+(81, '0000-00-00', 'pravilnici', 'dsfdsfsdf', '<p>ddsfdsfsd</p>', 'asd', 'admin', '2022-05-31 11:01:54', '0000-00-00', 1, 0),
+(82, '0000-00-00', 'pravilnici', '', '<p>asdasdasdasdas</p>', '', 'admin', '2022-05-31 11:02:05', '0000-00-00', 1, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -76,7 +84,7 @@ CREATE TABLE `event` (
 
 CREATE TABLE `imenik` (
   `id` int(11) NOT NULL,
-  `sifrad` char(6) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Šifra radnika',
+  `sifrad` char(13) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Šifra radnika',
   `prezime` varchar(40) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Prezime',
   `ime` varchar(40) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Ime',
   `sifoj` char(6) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Šifra OJ',
@@ -85,12 +93,21 @@ CREATE TABLE `imenik` (
   `tel_mobilni` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'mobilni telefon',
   `tel_fiksni` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Fiksni telefon',
   `tel_lokal` varchar(40) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Lokal u firmi',
-  `lice_sluzba` int(11) NOT NULL COMMENT 'Da li je čovek/služba (0/1)',
+  `lice_sluzba` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' COMMENT 'Da li je čovek/služba (0/1)',
   `firma_naziv` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
   `uneo` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `datum_unosa` datetime NOT NULL,
   `datum_izmene` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='imenik';
+
+--
+-- Dumping data for table `imenik`
+--
+
+INSERT INTO `imenik` (`id`, `sifrad`, `prezime`, `ime`, `sifoj`, `nazoj`, `email`, `tel_mobilni`, `tel_fiksni`, `tel_lokal`, `lice_sluzba`, `firma_naziv`, `uneo`, `datum_unosa`, `datum_izmene`) VALUES
+(1511, '1234567891012', 'Jelic', 'Milos', '1', 'Informatika', 'milos.jelic@pionir.rs', '123131', '2132131', '123132131', 'Sluzba', 'Pionir Fabrika Subotica', 'admin', '2022-06-01 11:02:10', '2022-06-01 12:43:50'),
+(1512, '2', 'Horvacki', 'Tomislav', '1', 'Informatika', 'tomislav.horvacki@pionir.rs', '123123', '23213213213', '321', 'Lice', 'Pionir Fabrika Subotica', 'admin', '2022-06-01 14:11:33', '2022-06-01 12:43:44'),
+(1513, '3', 'Kolar', 'Nenad', '1', 'Informatika', 'nenad.kolar@pionir.rs', '1231231', '321321321', '3123213', 'Ostalo', 'Pionir Hissar', 'admin', '2022-06-01 14:33:40', '2022-06-01 12:37:03');
 
 -- --------------------------------------------------------
 
@@ -131,7 +148,7 @@ CREATE TABLE `korisnici` (
 --
 
 INSERT INTO `korisnici` (`korisnik`, `lozinka`, `ime`, `datum_log`, `nivo_ovlascenja`) VALUES
-('admin', 'admin', 'admin', '2022-05-27 14:34:46', 1),
+('admin', 'admin', 'admin', '2022-05-27 14:34:46', 0),
 ('user', 'user', 'user', '2022-05-27 20:31:00', 2);
 
 -- --------------------------------------------------------
@@ -161,8 +178,6 @@ INSERT INTO `misli` (`id`, `naslov`, `tekst`, `autor`, `prikaz`, `datum_unosa`, 
 (507, 'misao', '<p>123</p>', 'admin', 1, '2022-05-29 14:52:43', 'admin'),
 (508, 'misao', '<p>123</p>', '123', 1, '2022-05-29 14:53:29', 'admin'),
 (509, 'misao', '<p>123</p>', '123', 1, '2022-05-29 15:13:22', 'admin'),
-(510, 'misao', '<p>123</p>', '123', 1, '2022-05-29 15:13:46', 'admin'),
-(511, 'misao', '<p>123</p>', '123', 1, '2022-05-29 15:14:18', 'admin'),
 (512, 'asd', '<p>asd</p>', 'asd', 1, '2022-05-29 15:15:16', 'admin'),
 (513, 'asd', '<p>asd</p>', 'asd', 1, '2022-05-29 15:20:32', 'admin'),
 (514, 'asd', '<p>asd</p>', 'asd', 1, '2022-05-29 15:22:01', 'admin'),
@@ -172,13 +187,16 @@ INSERT INTO `misli` (`id`, `naslov`, `tekst`, `autor`, `prikaz`, `datum_unosa`, 
 (518, 'asd', '<p>asd</p>', 'asdasd', 1, '2022-05-29 15:24:53', 'admin'),
 (519, 'asd', '<p>asd</p>', 'asd', 1, '2022-05-29 15:26:14', 'admin'),
 (520, 'asd', '<p>asd</p>', 'asd', 1, '2022-05-29 15:27:00', 'admin'),
-(521, 'asd', '<p>asd</p>', 'asd', 1, '2022-05-29 15:27:47', 'admin'),
-(522, 'asd', '<p>asd</p>', 'asd', 1, '2022-05-29 15:29:34', 'admin'),
+(521, 'asd12322222222', '<p>asd777</p>', 'sdad', 1, '2022-05-31 09:58:11', 'admin'),
+(522, 'asd', '<p>asd</p>', 'asd', 1, '2022-05-30 12:17:47', 'admin'),
 (523, 'asd', '<p>asd</p>', 'asd', 1, '2022-05-29 15:30:23', 'admin'),
 (524, 'asdasasd', '<p>asdasd</p>', 'asdasd', 1, '2022-05-29 15:32:45', 'admin'),
 (525, 'asdasd', '<p>asdasd</p>', 'asdasd', 1, '2022-05-29 15:33:50', 'admin'),
 (526, '', '', '', 1, '2022-05-29 16:04:28', 'admin'),
-(527, '', '<p>asdasdasadasd</p>', '', 1, '2022-05-29 16:04:48', 'admin');
+(527, '', '<p>asdasdasadasd</p>', '', 1, '2022-05-29 16:04:48', 'admin'),
+(528, '1', '<p>asdasd</p>', 'asdasd', 0, '2022-05-30 12:29:56', 'admin'),
+(529, '1', '<p>asdasd</p>', 'asdasd', 0, '2022-05-30 12:30:14', 'admin'),
+(530, '12', '<p>asdasd</p>', 'asdasd', 0, '2022-05-30 12:30:52', 'admin');
 
 -- --------------------------------------------------------
 
@@ -231,7 +249,7 @@ CREATE TABLE `vesti` (
 --
 
 INSERT INTO `vesti` (`id`, `datum`, `kategorija`, `naslov`, `tekst`, `tekst_ceo`, `slika`, `uneo`, `datum_unosa`, `datum_izmene`, `prikaz`, `redosled`) VALUES
-(102, '2022-05-05', 'korporativna', 'mkmkkm', 'mkmkmk	', '<p>asdasdasd</p>', '', 'admin', '2022-05-27 20:25:45', '0000-00-00 00:00:00', 1, 1);
+(102, '0000-00-00', 'korporativna', 'mkmkkm', '		mkmkmk		', '<p>asdasdasd</p>', 'rtrete', 'admin', '2022-05-27 20:25:45', '2022-05-31 12:29:29', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -315,7 +333,7 @@ ALTER TABLE `vesti_fajlovi`
 -- AUTO_INCREMENT for table `dokumenti`
 --
 ALTER TABLE `dokumenti`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'automaski broj', AUTO_INCREMENT=81;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'automaski broj', AUTO_INCREMENT=83;
 
 --
 -- AUTO_INCREMENT for table `dokumenti_fajlovi`
@@ -333,13 +351,13 @@ ALTER TABLE `event`
 -- AUTO_INCREMENT for table `imenik`
 --
 ALTER TABLE `imenik`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1511;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1514;
 
 --
 -- AUTO_INCREMENT for table `misli`
 --
 ALTER TABLE `misli`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=528;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=532;
 
 --
 -- AUTO_INCREMENT for table `obavestenja`
