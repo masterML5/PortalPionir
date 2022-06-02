@@ -133,10 +133,10 @@ include ('include_fns.php');
 						<div class="form-group">
 						<label for="firma_naziv">Naziv firme</label>
 						<select name="firma_naziv" class="form-control imenik_input imenik_select text-center" required>
-						<option value="Pionir Fabrika Subotica" <?php if ($imenik['firma_naziv']=='Pionir Subotica') echo 'selected';?>>Pionir Subotica</option>
-						<option value="Pionir Hissar" <?php if ($imenik['firma_naziv']=='Pionir Hissar') echo 'selected';?>>Pionir Hissar</option>
-						<option value="Pionir Paracin" <?php if ($imenik['firma_naziv']=='Pionir Paracin') echo 'selected';?>>Pionir Paracin</option>
-						<option value="Pionir Beograd" <?php if ($imenik['firma_naziv']=='Pionir Beograd') echo 'selected';?>>Pionir Paracin</option>
+							<option value="Pionir Fabrika Subotica" <?php if ($imenik['firma_naziv']=='Pionir Subotica') echo 'selected';?>>Pionir Subotica</option>
+							<option value="Pionir Hissar" <?php if ($imenik['firma_naziv']=='Pionir Hissar') echo 'selected';?>>Pionir Hissar</option>
+							<option value="Pionir Paracin" <?php if ($imenik['firma_naziv']=='Pionir Paracin') echo 'selected';?>>Pionir Paracin</option>
+							<option value="Pionir Beograd" <?php if ($imenik['firma_naziv']=='Pionir Beograd') echo 'selected';?>>Pionir Beograd</option>
 						</select>
                         </div>
 					
