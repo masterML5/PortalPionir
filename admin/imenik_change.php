@@ -77,7 +77,7 @@ include ('include_fns.php');
 </div>
 <div class="container contact-form">
             <div class="contact-image">
-                <img src="../img/pionir-logo.png" alt="rocket_contact"/>
+                 <img src="../img/pionir-logo.png" alt="rocket_contact"/>
             </div>
             <form  action="imenik_submit.php" method="post" enctype="multipart/form-data">
 			<input type="hidden" name="imenik" value="<?php echo $_REQUEST['imenik'];?>">

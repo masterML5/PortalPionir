@@ -18,7 +18,7 @@ body{margin-top:20px;}
 	font-size: 0.875em;
 	font-style: italic;
 }
-.row{
+.row:not(#row-misli, #row-dokumenti){
 	width: fit-content;
 }
 /* TABLES */

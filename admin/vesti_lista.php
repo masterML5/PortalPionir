@@ -48,7 +48,7 @@ $result = $handle->query($query);
         <div class="container">
             <img src="../img/pionir-logo.png"class="navbar-brand" alt="">
             <span class="vase_misli">Vaše vesti: <?php  echo $result->num_rows; ?></span>
-            <a href="vesti_add.php"><button class="btn btn-warning dodaj">Dodaj novu</button></a>
+            <a href="vesti_add.php"><button class="btn btn-warning dodaj">Dodaj novu vest</button></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto navbar-right">

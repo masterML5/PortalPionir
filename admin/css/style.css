@@ -77,6 +77,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 10px;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .form-control{
@@ -184,3 +185,4 @@ input[type="checkbox"].switch_1{
     grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
   }
+ 

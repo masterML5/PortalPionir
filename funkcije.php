@@ -174,8 +174,10 @@ for ($i=0; $i < $num_results; $i++)
 	echo '<EM class="category_home_news">'.$row['naslov'].'</EM>';
 	echo '	<UL class="home_news_list">';
 	echo '		<LI>';
+
 	if (file_exists($row['slika']))
 		echo '  	<IMG src="'.$row['slika'].'" width="150">';
+		
 	echo '		<DIV>';
 	echo '			<P>'.$row['tekst'].'</P>';
 	echo '		</DIV>';

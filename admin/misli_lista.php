@@ -44,7 +44,7 @@ include_once('include_fns.php');
         <div class="container">
             <img src="../img/pionir-logo.png"class="navbar-brand" alt="">
             <span class="vase_misli">Vaše misli: <?php  echo $result->num_rows; ?></span>
-            <a href="misli_add.php"><button class="btn btn-warning dodaj">Dodaj novu</button></a>
+            <a href="misli_add.php"><button class="btn btn-warning dodaj">Dodaj novu misao</button></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto navbar-right">
@@ -56,7 +56,7 @@ include_once('include_fns.php');
     </nav>
 </header>
 <div class="container">
-<div class="row">
+<div class="row" id="row-misli">
 	<div class="col-lg-12">
 		<div class="main-box clearfix">
 			<div class="table-responsive">
