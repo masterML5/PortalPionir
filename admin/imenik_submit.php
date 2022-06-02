@@ -37,6 +37,7 @@ include_once('include_fns.php');
 				  firma_naziv   = '$firma_naziv',				  
                   datum_izmene  =  now()
               where id = $imenik";
+    $b = 1;
   }
   else 
   {         // It's a new story
@@ -45,15 +46,35 @@ include_once('include_fns.php');
               values 
 				('$sifrad', '$prezime', '$ime', '$sifoj', '$nazoj', '$email', '$tel_mobilni', '$tel_fiksni', '$tel_lokal', '$lice_sluzba', '$firma_naziv', '".
                $_SESSION['auth_user']."', now())";
+    $b = 2;
   }
 
   $result = $handle->query($query);
 
+
   if (!$result) 
   {
-    echo "Greška u bazi prilikom izvršenja upita <pre>$query</pre>";
-    echo mysqli_error();
+    if($b == 1)
+    {
+      $_SESSION['status'] = '<div class="alert alert-danger">' . "Doslo je do greske, kontakt nije update-ovan." . '</div>';
+    header("Location: imenik_change.php?imenik=".$imenik);
+    }
+    else if($b == 2)
+    {
+    $_SESSION['status'] = '<div class="alert alert-danger">' . "Doslo je do greske, kontakt nije upload-ovan." . '</div>';
+    header("Location: imenik_add.php");
+    }
     exit;
   }
-  else echo "Uspešno"
+  if($b == 1)
+  {
+  $_SESSION['status'] = '<div class="alert alert-success">' . "Uspesno ste izmenili kontakt!" . '</div>';
+  header("Location: imenik_change.php?imenik=".$imenik);
+  } 
+  else if($b == 2)
+  {
+    $_SESSION['status'] = '<div class="alert alert-success">' . "Uspesno ste uneli novi kontakt!" . '</div>';
+    header("Location: imenik_add.php");
+  }
+
 ?>

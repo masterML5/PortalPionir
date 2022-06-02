@@ -54,8 +54,21 @@ include ('include_fns.php');
 <link rel="stylesheet" href="css/style.css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/status.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-
+<div id="status">
+                
+				<?php
+				if(isset($_SESSION['status'])){  
+					echo $_SESSION['status'];
+					unset($_SESSION['status']);
+				}
+				?>
+			
+</div>
+<div class="backBtn">
+<a href="imenik_lista.php"><button type="button" class="btn btn-info">Povratak nazad</button></a>
+</div>
 <div class="container contact-form">
             <div class="contact-image">
                 <img src="../img/pionir-logo.png" alt="rocket_contact"/>
