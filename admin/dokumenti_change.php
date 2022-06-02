@@ -90,7 +90,7 @@ require('calendar/tc_calendar.php');
 			
 </div>
 <div class="backBtn">
-<a href="dokumenti_update.php"><button type="button" class="btn btn-info">Povratak nazad</button></a>
+<a href="dokumenti_lista.php"><button type="button" class="btn btn-info">Povratak nazad</button></a>
 </div>
 <div class="container contact-form">
             <div class="contact-image">
