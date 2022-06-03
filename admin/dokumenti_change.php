@@ -96,7 +96,7 @@ require('calendar/tc_calendar.php');
             <div class="contact-image">
                 <img src="../img/pionir-logo.png" alt="rocket_contact"/>
             </div>
-			<form action="dokument_submit.php" method="post" enctype="multipart/form-data">
+			<form action="dokument_update.php" method="post" enctype="multipart/form-data">
 				<input type="hidden" name="dokument" value="<?php echo $_REQUEST['dokument'];?>">
 				<input type="hidden" name="autor" value="<?php echo $_SESSION['auth_user'];?>">
                 <h3>Unesi novi dokument</h3>
@@ -160,7 +160,7 @@ require('calendar/tc_calendar.php');
 					</div>
 					<div class="form-group">
 						<label for="fileToUpload">Slika</label>
-						<input type="file" name="fileToUpload" id="fileToUpload" class="form-control" value="<?php echo $dokument['slika']?>">
+						<input type="file" name="fileToUpload" id="fileToUpload" class="form-control" value="">
 					</div>
 			</div>
 					<div class="cold-md-6">

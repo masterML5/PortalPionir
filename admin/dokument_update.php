@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 include_once('include_fns.php');
 
   $handle = db_connect();
@@ -15,11 +15,11 @@ include_once('include_fns.php');
   $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]); 
   $uploadOk = 1;
   $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-  $dokument = [];
+
     
 
 
-
+if(isset($_REQUEST['slika']) && $_REQUEST['slika']!=''){
 
 if (file_exists($target_file)) {
    
@@ -29,7 +29,7 @@ if (file_exists($target_file)) {
     $uploadOk = 0;
 }   
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 5000000) {
+else if ($_FILES["fileToUpload"]["size"] > 5000000) {
    
     $poruka = '<div class="alert alert-danger">' . "Slika je prevelika, maksimalna velicina je 5MB." . '</div';
    
@@ -37,13 +37,14 @@ if ($_FILES["fileToUpload"]["size"] > 5000000) {
     $uploadOk = 0;           
 }
 // Allow certain file formats
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+else if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
     && $imageFileType != "gif" ) {
    
     $poruka = '<div class="alert alert-danger">' . "Slika mora biti JPG, JPEG, PNG ili GIF formata." . '</div';
      
     
     $uploadOk = 0;
+}
 }
 if ($uploadOk != 0) {
    
@@ -66,9 +67,9 @@ if ($uploadOk != 0) {
             }
 
 
-              if (isset($_REQUEST['dokument']) && $_REQUEST['dokument']!='') 
-              {   // It's an update
-                @$dokument = $_REQUEST['dokument'];
+             // It's an update
+             if (isset($_REQUEST['dokument']) && $_REQUEST['dokument']!=''){
+                $dokument = $_REQUEST['dokument'];
               
                 $query = "update dokumenti
                           set 
@@ -81,58 +82,59 @@ if ($uploadOk != 0) {
                       prikaz       = $prikaz,
                       datum_izmene =  now()
                           where id = $dokument";
-                    $b = 1;
-              }
-              else 
-              {         // It's a new story
-
-                $query = "insert into dokumenti 
-                            (datum, kategorija, naslov, tekst, slika, uneo, prikaz)
-                          values 
-                            ('$datum', '$kategorija', '$naslov', '$tekst', '$slika', '$uneo', $prikaz)";
-                    $b = 2;
-              }
-            }
-          
-
-            $result = $handle->query($query);
-
-
-
-if (!$result) 
-{
-  if($b == 1)
-  {
-    $_SESSION['status'] = '<div class="alert alert-danger">' . "Doslo je do greske, dokument nije update-ovan." . '</div>';
-  header("Location: dokumenti_change.php?dokument=".$dokument);
-  }
-  else if($b == 2)
-  {
-  $_SESSION['status'] = '<div class="alert alert-danger">' . "Doslo je do greske, dokument nije upload-ovan." . '</div>';
-  header("Location: dokumenti_add.php");
-  }else{
-    exit;
-  }
+                $result = $handle->query($query);
+             }               
 }
-if($b == 1)
+else{
+    if (isset($_REQUEST['dokument']) && $_REQUEST['dokument']!='') {
+                        
+                        if(isset($_POST['prikaz']) &&
+                        $_POST['prikaz'] == 'Yes')
+                    {
+                        $prikaz = 1;
+                    }
+                    else
+                    {
+                        $prikaz = 0;
+                    }
+
+
+
+                        $dokument = $_REQUEST['dokument'];
+                        $query = "update dokumenti
+                        set 
+                    datum        = '$datum',
+                    kategorija   = '$kategorija',
+                    naslov       = '$naslov', 
+                    tekst        = '$tekst',
+                    uneo         = '$uneo',
+                    prikaz       = $prikaz,
+                    datum_izmene =  now()
+                        where id = $dokument";
+                    $result = $handle->query($query);
+    }
+
+}
+    }
+
+
+
+
+if (!$result && $uploadOk != 0) 
 {
-$_SESSION['status'] = '<div class="alert alert-success">' . "Uspesno ste izmenili dokument!" . '</div>';
+
+  
+    $_SESSION['status'] = '<div class="alert alert-danger">' . "Doslo je do greske, dokument nije update-ovan." . '</div>' . '<br>' . $poruka;
+  header("Location: dokumenti_change.php?dokument=".$dokument);
+  
+  
+}
+else 
+{
+$_SESSION['status'] = '<div class="alert alert-success">' . "Uspesno ste izmenili dokument!" . '</div>' . '<br>' . $poruka;;
 header("Location: dokumenti_change.php?dokument=".$dokument);
 } 
-else if($b == 2)
-{
-  $_SESSION['status'] = '<div class="alert alert-success">' . "Uspesno ste uneli novi dokument!" . '</div>';
-  header("Location: dokumenti_add.php");
-}
-}
- else if ($uploadOk == 0) {
-  header("Location: dokumenti_change.php?dokument=".$dokument);
-  $_SESSION['status'] = $poruka;
-  exit;        
-}else{
-  header("Location: dokumenti_change.php");
-  $_SESSION['status'] = '<div class="alert alert-danger">' . "Doslo je do greske, slika nije upload-ovana." . '</div';
-  exit;  
-}
 
+           
+ 
 ?>
