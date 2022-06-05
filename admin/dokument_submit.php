@@ -171,7 +171,6 @@ if ($uploadOk != 0 || $target_file == $target_dir) {
                       kategorija   = '$kategorija',
                       naslov       = '$naslov', 
                       tekst        = '$tekst',
-                      slika        = '$slika',
                       uneo         = '$uneo',
                       prikaz       = $prikaz,
                       datum_izmene =  now()
