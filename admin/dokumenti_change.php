@@ -75,6 +75,7 @@ require('calendar/tc_calendar.php');
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/status.js"></script>  
  <!-- <script src="js/status.js"></script>   -->
 	<title>Dokumenti</title>
 </head>
@@ -96,7 +97,7 @@ require('calendar/tc_calendar.php');
             <div class="contact-image">
                 <img src="../img/pionir-logo.png" alt="rocket_contact"/>
             </div>
-			<form action="dokument_update.php" method="post" enctype="multipart/form-data">
+			<form action="dokument_submit.php" method="post" enctype="multipart/form-data">
 				<input type="hidden" name="dokument" value="<?php echo $_REQUEST['dokument'];?>">
 				<input type="hidden" name="autor" value="<?php echo $_SESSION['auth_user'];?>">
                 <h3>Unesi novi dokument</h3>
@@ -129,7 +130,7 @@ require('calendar/tc_calendar.php');
                         <div class="form-group">
 							<label for="prikaz">Prikaz</label>
 							<div class="switch_box box_1">
-							<input type="checkbox"  id="checkbox" class="switch_1" name="prikaz" value="
+							<input type="checkbox"  id="checkbox" class="switch_1" onclick="checkboxValue(this)" name="prikaz" value="
 							<?php 
 							if($dokument['prikaz'] == 1)
 							{
@@ -140,7 +141,7 @@ require('calendar/tc_calendar.php');
 								echo 'No' . '"';
 							}
 							?>
-							onclick="checkboxValue(this)"/>
+							 />
 							</div>
 						</div>
                         
@@ -160,12 +161,12 @@ require('calendar/tc_calendar.php');
 					</div>
 					<div class="form-group">
 						<label for="fileToUpload">Slika</label>
-						<input type="file" name="fileToUpload" id="fileToUpload" class="form-control" value="">
+						<input type="file" name="fileToUpload" id="fileToUpload" class="form-control" value="<?php echo $dokument['slika']?>">
 					</div>
 			</div>
 					<div class="cold-md-6">
 					<div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Dodaj" />
+                            <input type="submit" name="btnSubmitChange" class="btnContact" value="Dodaj" />
                         </div>
                 </div>
             </form>

@@ -55,7 +55,7 @@ else
     $b = 2;
   }
 
-
+  
   $result = $handle->query($query);
 
   if (!$result) 

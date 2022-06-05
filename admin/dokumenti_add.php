@@ -99,11 +99,11 @@ require('calendar/tc_calendar.php');
                     <div class="col-md-6 form-opsti">
                         <div class="form-group">
 							<label for="naslov">Naslov</label>
-                            <input type="text" name="naslov" class="form-control" placeholder="Naslov" value="" />
+                            <input type="text" name="naslov" class="form-control" placeholder="Naslov" value=""  required/>
                         </div>
                        <div class="form-group">
 						   <label for="kategorija">Kategorija</label>
-						   <select name="kategorija" class="form-control">
+						   <select name="kategorija" class="form-control" required>
 
 								<option value="pravilnici">Pravilnici</option>
 								<option value="orgseme">Organizacione šeme</option>
@@ -134,13 +134,13 @@ require('calendar/tc_calendar.php');
                     <div class="col-md-12">
                         <div class="form-group">
 							<label for="tekst">Unesite tekst dokumenta</label>
-                            <textarea id="elm1" name="tekst" class="form-control" rows="12" cols="80" ></textarea>
+                            <textarea id="elm1" name="tekst" class="form-control" rows="12" cols="80" required></textarea>
                         </div>
                     </div>
 					<div class="col-md-6 form-opsti">
 					<div class="form-group">
 						<label for="">Datum</label>
-						<input type="date" name="datum" class="form-control">
+						<input type="date" name="datum" class="form-control" required>
 					</div>
 					<div class="form-group">
 						<label for="fileToUpload">Slika</label>
@@ -150,7 +150,7 @@ require('calendar/tc_calendar.php');
 			</div>
 					<div class="cold-md-6">
 					<div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Dodaj" />
+                            <input type="submit" name="btnSubmitAdd" class="btnContact" value="Dodaj" />
                         </div>
                 </div>
             </form>
