@@ -3,14 +3,12 @@ include ('include_fns.php');
 ?>
 
 <?php
-// Request selected language
-$hl = (isset($_POST["hl"])) ? $_POST["hl"] : false;
-if(!defined("L_LANG") || L_LANG == "L_LANG")
+
 {
 	define("L_LANG", "sr_CS"); // Srpski example
 }
 // IMPORTANT: Request the selected date from the calendar
-$mydate = isset($_POST["datum"]) ? $_POST["datum"] : "";
+
 // Note: this sample doesn't show you how to use the $mydate variable with your database, but you can handle it as any other php variable in your script!
 ?>
 <?php
@@ -63,99 +61,105 @@ require('calendar/tc_calendar.php');
 <!-- /TinyMCE -->
 
 
-<form action="vest_submit.php" method="post" enctype="multipart/form-data">
-<input type="hidden" name="autor" value="<?php echo $_SESSION['auth_user'];?>">
-<table>
 
-<tr>
-  <td>Datum<td>
-</tr>
-<tr>
-  <td><?php
-		  $myCalendar = new tc_calendar("datum", true, false);
-		  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
-		  $myCalendar->setDate(date("d"), date("m"), date("Y"));
-		  $myCalendar->setPath("calendar/");
-		  $myCalendar->setYearInterval(date("Y")-20, date("Y")+20);
-		  //$myCalendar->dateAllow("1945-01-01", date("Y-m-d"));
-		  $myCalendar->setAlignment("left", "bottom");
-		  $myCalendar->writeScript();
-		?>	
-  </td>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+ <script src="js/status.js"></script>  
+	<title>Dokumenti</title>
+</head>
+<body>
+<div id="status">
+                
+				<?php
+				if(isset($_SESSION['status'])){  
+					echo $_SESSION['status'];
+					unset($_SESSION['status']);
+				}
+				?>
+			
+</div>
+<div class="backBtn">
+<a href="vesti_lista.php"><button type="button" class="btn btn-info">Povratak nazad</button></a>
+</div>
+<div class="container contact-form">
+            <div class="contact-image">
+                <img src="../img/pionir-logo.png" alt="rocket_contact"/>
+            </div>
+            <form action="vest_submit.php" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="autor" value="<?php echo $_SESSION['auth_user'];?>">
+                <h3>Unesi novu vest</h3>
+               <div class="row">
+                    <div class="col-md-6 form-opsti">
+                        <div class="form-group">
+							<label for="naslov">Naslov</label>
+                            <input type="text" name="naslov" class="form-control" placeholder="Naslov" value=""  required/>
+                        </div>
+                       <div class="form-group">
+						   <label for="kategorija">Kategorija</label>
+						   <select name="kategorija" class="form-control" required>
+
+								<option value="pravilnici">Pravilnici</option>
+								<option value="orgseme">Organizacione šeme</option>
+								<option value="podaci">Podaci</option>
+								<option value="misija">Misija</option>
+								<option value="saveti">Saveti</option>
+								<option value="obrasci">Obrasci</option>
+								<option value="sabloni">Šabloni i templejti</option>
+								<option value="radnovreme">Radno vreme</option>
+								<option value="radnovremerestoran">Radno vreme restorana</option>
+								<option value="radnovremepauza">Radno vreme pauza</option>
+								<option value="jelovnik">Jelovnik</option>
+								<option value="saveti">Saveti</option>
+								<option value="iso_procedure">ISO PROCEDURE</option>
+								<option value="iso_poslovnik">ISO poslovnik</option>
+								<option value="bezbednost">Bezbednost i zaštita</option>
   
-</tr>
-
-<tr>
-  <td>Kategorija<td>
-</tr>
-<tr>
-  <td><select name="kategorija">
-  <option>korporativna</option>
-  <option>ostalo</option>
-</select></td>
-</tr>
-
-<tr>
-  <td>Naslov<td>
-</tr>
-<tr>
-  <td><input size="80" name="naslov"></td>
-</tr>
-
-<tr>
-  <td>Skraćeni tekst vesti</td>
-</tr>
-<tr>
-  <td>
-  
-  <!-- <textarea cols="80" rows="5" name="tekst" wrap="virtual"></textarea> -->
-	<!-- Gets replaced with TinyMCE, remember HTML in a textarea should be encoded -->
-	<textarea name="tekst" rows="5" cols="80" style="width: 80%">
-	</textarea>    
-  
-  </td>
-</tr>
-
-
-<tr>
-  <td>Ceo tekst vesti</td>
-</tr>
-<tr>
-  <td>
-  
-  <!-- <textarea cols="80" rows="7" name="tekst" wrap="virtual"></textarea> -->
-	<!-- Gets replaced with TinyMCE, remember HTML in a textarea should be encoded -->
-	<textarea id="elm1" name="tekst_ceo" rows="15" cols="80" style="width: 80%">
-	</textarea>    
-  
-  </td>
-</tr>
-
-
-<tr>
-  <td>Slika<td>
-</tr>
-<tr>
-  <td><input size="80" name="slika"></td>
-</tr>
-
-<tr>
-  <td>Redosled<td>
-</tr>
-<tr>
-  <td><input size="10" name="redosled" value="0"></td>
-</tr>
-
-<tr>
-  <td>Prikazati</td>
-</tr>
-<tr>
-  <td><input type="checkbox" name="prikaz" checked="checked" value="Yes" /></td>
-</tr>
-
-<tr>
-  <td align="center"><input type="submit" value="Snimi"></td>
-</tr>
-
-</table>
-</form>
+ 							</select>
+					   </div>
+                        <div class="form-group">
+							<label for="prikaz">Prikaz</label>
+							<div class="switch_box box_1">
+                            <input type="checkbox" id="checkbox" class="switch_1" name="prikaz" class="form-control" checked="checked" value="Yes" onclick="checkboxValue(this)" />
+							</div>
+						</div>
+                        
+                    </div>
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="skrtekst">Skraceni tekst</label>
+							<textarea name="tekst" id="skrtekst" class="form-control"  cols="30" rows="3"></textarea>
+						</div>
+					</div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+							<label for="tekst_ceo">Unesite tekst dokumenta</label>
+                            <textarea id="elm1" name="tekst_ceo" class="form-control" rows="7" cols="80" ></textarea>
+                        </div>
+                    </div>
+					<div class="col-md-6 form-opsti">
+					<div class="form-group">
+						<label for="">Datum</label>
+						<input type="date" name="datum" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label for="fileToUpload">Slika</label>
+						<input type="file" name="fileToUpload" id="fileToUpload" class="form-control">
+						
+					</div>
+			</div>
+					<div class="cold-md-6">
+					<div class="form-group">
+                            <input type="submit" name="btnSubmitAdd" class="btnContact" value="Dodaj" />
+                        </div>
+                </div>
+            </form>
+</div>
+</body>
+</html>

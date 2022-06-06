@@ -12,19 +12,8 @@ include ('include_fns.php');
   {
 	define("L_LANG", "sr_CS"); 
   }
-// IMPORTANT: Request the selected date from the calendar
-$mydate = isset($_POST["datum"]) ? $_POST["datum"] : "";
-// Note: this sample doesn't show you how to use the $mydate variable with your database, but you can handle it as any other php variable in your script!
+
 ?>
-<?php
-// Load the calendar class
-require('calendar/tc_calendar.php');
-?>
-
-<script language="javascript" src="calendar/calendar.js"></script>
-<link href="calendar/calendar.css" rel="stylesheet" type="text/css">
-
-
 
 <!-- TinyMCE -->
 <script type="text/javascript" src="jscripts/tiny_mce/tiny_mce.js"></script>
@@ -66,109 +55,118 @@ require('calendar/tc_calendar.php');
 </script>
 <!-- /TinyMCE -->
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/status.js"></script>  
+ <!-- <script src="js/status.js"></script>   -->
+	<title>Vesti</title>
+</head>
 <body>
-
-<form action="vest_submit.php" method="post" enctype="multipart/form-data">
-<input type="hidden" name="vest" value="<?php echo $_REQUEST['vest'];?>">
-<input type="hidden" name="autor" value="<?php echo $_SESSION['auth_user'];?>">
-
-<table>
-
-<tr>
-  <td>Datum</td>
-</tr>
-<tr>
-  
-  <td><?php
-		  $myCalendar = new tc_calendar("datum", true, false);
-		  $myCalendar->setIcon("calendar/images/iconCalendar.gif");
-		  //$myCalendar->setDate(date("d"), date("m"), date("Y"));
-		  $myCalendar->setDate(date('d', strtotime($vest['datum'])), date('m', strtotime($vest['datum'])), date('Y', strtotime($vest['datum'])));
-		  $myCalendar->setPath("calendar/");
-		  $myCalendar->setYearInterval(date("Y")-20, date("Y")+20);
-		  //$myCalendar->dateAllow("2012-01-01", date("Y-m-d"));
-		  $myCalendar->setAlignment("left", "bottom");
-		  $myCalendar->writeScript();
-		?>	
-  </td>  
-</tr>
-
-<tr>
-  <td>Kategorija</td>
-</tr>
-<tr>
-  <td><select name="kategorija"> 
-  <option>korporativna</option>
-  <option>ostalo</option>
-</select></td>
-</tr>
-
-<tr>
-  <td>Naslov</td>
-</tr>
-<tr>
-  <td><input size="80" name="naslov" value="<?php echo $vest['naslov'];?>"></td>>
-</tr>
-
-<tr>
-  <td>Skraćeni tekst vesti</td>
-</tr>
-<tr>
-  <td>
-  
-  <!-- <textarea cols="80" rows="7" name="tekst" wrap="virtual"> <?php echo $vest['tekst'];?> </textarea> -->
-	<!-- Gets replaced with TinyMCE, remember HTML in a textarea should be encoded -->
-	<textarea name="tekst" rows="7" cols="80" style="width: 80%">
-		<?php echo $vest['tekst'];?>
-	</textarea>    
-  
-  </td>
-</tr>
-
-<tr>
-  <td>Tekst vesti</td>
-</tr>
-<tr>
-  <td>
-  
-  <!-- <textarea cols="80" rows="7" name="tekst" wrap="virtual"> <?php echo $vest['tekst_ceo'];?> </textarea> -->
-	<!-- Gets replaced with TinyMCE, remember HTML in a textarea should be encoded -->
-	<textarea id="elm1" name="tekst_ceo" rows="15" cols="80" style="width: 80%">
-		<?php echo $vest['tekst_ceo'];?>
-	</textarea>    
-  
-  </td>
-</tr>
-
-
-<tr>
-  <td>Slika<td>
-</tr>
-<tr>
-  <td><input size="80" name="slika" value="<?php echo $vest['slika'];?>">></td>
-</tr>
-
-<tr>
-  <td>Redosled<td>
-</tr>
-<tr>
-  <td><input size="10" name="redosled" value="<?php echo $vest['redosled'];?>"></td>
-</tr>
-
-<tr>
-  <td>Prikazati</td>
-</tr>
-<tr>
-  <td><input type="checkbox" name="prikaz" checked="checked" value="Yes" /></td>
-</tr>
-
-<tr>
-  <td align="center"><input type="submit" value="Snimi"></td>
-</tr>
-
-</table>
-</form>
-
+<div id="status">
+                
+				<?php
+				if(isset($_SESSION['status'])){  
+					echo $_SESSION['status'];
+					unset($_SESSION['status']);
+				}
+				?>
+			
+</div>
+<div class="backBtn">
+<a href="vesti_lista.php"><button type="button" class="btn btn-info">Povratak nazad</button></a>
+</div>
+<div class="container contact-form">
+            <div class="contact-image">
+                <img src="../img/pionir-logo.png" alt="rocket_contact"/>
+            </div>
+			<form action="vest_submit.php" method="post" enctype="multipart/form-data">
+				<input type="hidden" name="vest" value="<?php echo $_REQUEST['vest'];?>">
+				<input type="hidden" name="autor" value="<?php echo $_SESSION['auth_user'];?>">
+                <h3>Izmeni vest</h3>
+               <div class="row">
+                    <div class="col-md-6 form-opsti">
+                        <div class="form-group">
+							<label for="naslov">Naslov</label>
+                            <input type="text" name="naslov" class="form-control" placeholder="Naslov" value="<?php echo $vest['naslov'] ?>" />
+                        </div>
+                       <div class="form-group">
+						   <label for="kategorija">Kategorija</label>
+						   
+								<select name="kategorija" class="form-control"> 
+								<option value="pravilnici" <?php if ($vest['kategorija']=="pravilnici"){echo "selected";};?>> Pravilnici</option>
+								<option value="orgseme" <?php if ($vest['kategorija']=="orgseme"){echo "selected";};?>> Organizacione šeme</option>
+								<option value="podaci" <?php if ($vest['kategorija']=="podaci"){echo "selected";};?>>Podaci</option>
+								<option value="misija" <?php if ($vest['kategorija']=="misija"){echo "selected";};?>>Misija</option>
+								<option value="saveti" <?php if ($vest['kategorija']=="saveti"){echo "selected";};?>>Saveti</option>
+								<option value="obrasci <?php if ($vest['kategorija']=="obrasci"){echo "selected";};?>">Obrasci</option>
+								<option value="sabloni" <?php if ($vest['kategorija']=="sabloni"){echo "selected";};?>>Šabloni i templejti</option>
+								<option value="radnovreme" <?php if ($vest['kategorija']=="radnovreme"){echo "selected";};?>>Radno vreme</option>
+								<option value="radnovremerestoran" <?php if ($vest['kategorija']=="radnovremerestoran"){echo "selected";};?>>Radno vreme restorana</option>
+								<option value="radnovremepauza" <?php if ($vest['kategorija']=="radnovremepauza"){echo "selected";};?>>Radno vreme pauza</option>
+								<option value="jelovnik" <?php if ($vest['kategorija']=="jelovnik"){echo "selected";};?>>Jelovnik</option>
+								<option value="iso_procedure" <?php if ($vest['kategorija']=="iso_procedure"){echo "selected";};?>>ISO PROCEDURE</option>
+								<option value="iso_poslovnik" <?php if ($vest['kategorija']=="iso_poslovnik"){echo "selected";};?>>ISO poslovnik</option>
+								<option value="bezbednost" <?php if ($vest['kategorija']=="bezbednost"){echo "selected";};?>>Bezbednost i zaštita</option>
+								</select>
+					   </div>
+                        <div class="form-group">
+							<label for="prikaz">Prikaz</label>
+							<div class="switch_box box_1">
+							<input type="checkbox"  id="checkbox" class="switch_1" onclick="checkboxValue(this)" name="prikaz" value="
+							<?php 
+							if($vest['prikaz'] == 1)
+							{
+								echo 'Yes' .'"' . 'checked';
+							}
+							else
+							{
+								echo 'No' . '"';
+							}
+							?>
+							 />
+							</div>
+						</div>
+                        
+                    </div>
+					<div class="col-md-12">
+                        <div class="form-group">
+							<label for="skrtekst">Unesite skraceni tekst vesti</label>
+                            <textarea name="tekst" class="form-control skrtext" rows="3" cols="30" >
+							<?php echo $vest['tekst'] ?>
+							</textarea>
+                        </div>
+						</div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+							<label for="tekst">Unesite tekst vesti</label>
+                            <textarea id="elm1" name="tekst_ceo" class="form-control" rows="7" cols="80" >
+							<?php echo $vest['tekst_ceo'] ?>
+							</textarea>
+                        </div>
+                    </div>
+					<div class="col-md-6 form-opsti">
+					<div class="form-group">
+						<label for="">Datum</label>
+						<input type="date" name="datum" class="form-control" value="<?php echo $vest['datum'] ?>">
+					</div>
+					<div class="form-group">
+						<label for="fileToUpload">Slika</label>
+						<input type="file" name="fileToUpload" id="fileToUpload" class="form-control" value="<?php echo $vest['slika']?>">
+					</div>
+			</div>
+					<div class="cold-md-6">
+					<div class="form-group">
+                            <input type="submit" name="btnSubmitChange" class="btnContact" value="Dodaj" />
+                        </div>
+                </div>
+            </form>
+</div>
 </body>
 </html>

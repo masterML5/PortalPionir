@@ -12,18 +12,7 @@ include ('include_fns.php');
   {
 	define("L_LANG", "sr_CS"); 
   }
-// IMPORTANT: Request the selected date from the calendar
-$mydate = isset($_POST["datum"]) ? $_POST["datum"] : "";
-// Note: this sample doesn't show you how to use the $mydate variable with your database, but you can handle it as any other php variable in your script!
 ?>
-<?php
-// Load the calendar class
-require('calendar/tc_calendar.php');
-?>
-
-<script language="javascript" src="calendar/calendar.js"></script>
-<link href="calendar/calendar.css" rel="stylesheet" type="text/css">
-
 
 
 <!-- TinyMCE -->
@@ -100,7 +89,7 @@ require('calendar/tc_calendar.php');
 			<form action="dokument_submit.php" method="post" enctype="multipart/form-data">
 				<input type="hidden" name="dokument" value="<?php echo $_REQUEST['dokument'];?>">
 				<input type="hidden" name="autor" value="<?php echo $_SESSION['auth_user'];?>">
-                <h3>Unesi novi dokument</h3>
+                <h3>Izmeni dokument</h3>
                <div class="row">
                     <div class="col-md-6 form-opsti">
                         <div class="form-group">
