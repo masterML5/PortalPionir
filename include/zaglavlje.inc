@@ -1,6 +1,6 @@
 ﻿<HEAD>
 
-<META content="text/html; charset=utf-8" http-equiv="Content-Type"><TITLE>Alfa-Plam a.d. Vranje</TITLE>
+<META content="text/html; charset=utf-8" http-equiv="Content-Type"><TITLE>Pionir d.o.o - Portal</TITLE>
 <link rel="shortcut icon" href="http://localhost/portal/favicon.ico" />
 <LINK rel="stylesheet" type="text/css" href="css/main.css">
 <LINK rel="stylesheet" type="text/css" href="css/jquery.ui-1.7.2.custom.css">

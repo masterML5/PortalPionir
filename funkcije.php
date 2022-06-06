@@ -213,7 +213,7 @@ $db->close();
 
 <?php
 
-function prikazi_info($ckategorija,  $pagenum){
+function prikazi_info($ckategorija = null ,  $pagenum = null){
 @ $db = new mysqli('localhost', 'root', '', 'alfaplam_portal');
 if (mysqli_connect_errno())
 {

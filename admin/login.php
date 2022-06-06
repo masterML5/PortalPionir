@@ -4,7 +4,7 @@ include_once('include_fns.php');
   if ( (!isset($_REQUEST['username'])) || (!isset($_REQUEST['password'])) ) 
   {
 
-    $_SESSION['status'] = '<div class="alert alert-danger">' . "Morate uneti korisni�ko ime i lozinku za nastavak" . '</div>';
+    $_SESSION['status'] = '<div class="alert alert-danger">' . "Morate uneti korisničko ime i lozinku za nastavak" . '</div>';
     header("Location: index.php");
     exit;
   }

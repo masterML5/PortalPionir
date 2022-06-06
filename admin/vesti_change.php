@@ -114,6 +114,8 @@ include ('include_fns.php');
 								<option value="iso_procedure" <?php if ($vest['kategorija']=="iso_procedure"){echo "selected";};?>>ISO PROCEDURE</option>
 								<option value="iso_poslovnik" <?php if ($vest['kategorija']=="iso_poslovnik"){echo "selected";};?>>ISO poslovnik</option>
 								<option value="bezbednost" <?php if ($vest['kategorija']=="bezbednost"){echo "selected";};?>>Bezbednost i zaštita</option>
+								<option value="korporativna" <?php if ($vest['kategorija']=="korporativna"){echo "selected";};?>>Korporativna obaveštenja</option>
+								<option value="ostalo" <?php if ($vest['kategorija']=="ostalo"){echo "selected";};?>>Ostala obaveštenja</option>
 								</select>
 					   </div>
                         <div class="form-group">

@@ -120,6 +120,8 @@ require('calendar/tc_calendar.php');
 								<option value="iso_procedure">ISO PROCEDURE</option>
 								<option value="iso_poslovnik">ISO poslovnik</option>
 								<option value="bezbednost">Bezbednost i zaštita</option>
+								<option value="korporativna">Korporativna obaveštenja</option>
+								<option value="ostalo">Ostala obaveštenja</option>
   
  							</select>
 					   </div>
