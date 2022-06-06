@@ -6,7 +6,8 @@ include_once('include_fns.php');
 
 <HEAD>
 
-<META content="text/html; charset=utf-8" http-equiv="Content-Type"><TITLE>Alfa-Plam a.d. Vranje - Portal</TITLE>
+<META content="text/html; charset=utf-8" http-equiv="Content-Type">
+<TITLE>Pionir d.o.o - Portal</TITLE>
 
 
 

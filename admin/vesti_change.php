@@ -146,9 +146,7 @@ include ('include_fns.php');
                     <div class="col-md-12">
                         <div class="form-group">
 							<label for="tekst">Unesite tekst vesti</label>
-                            <textarea id="elm1" name="tekst_ceo" class="form-control" rows="7" cols="80" >
-							<?php echo $vest['tekst_ceo'] ?>
-							</textarea>
+                            <textarea id="elm1" name="tekst_ceo" class="form-control" rows="7" cols="80" ><?php echo $vest['tekst_ceo'] ?></textarea>
                         </div>
                     </div>
 					<div class="col-md-6 form-opsti">

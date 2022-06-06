@@ -7,7 +7,7 @@ include_once('include_fns.php');
 <head>
 
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>Alfa-Plam a.d. Vranje - Portal</title>
+<title>Pionir d.o.o - Portal</title>
 
 <link href="css/stylemenu.css" rel="stylesheet" type="text/css">
 
