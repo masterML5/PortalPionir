@@ -5,7 +5,7 @@
   // else return false
   {
   
-	echo "select * from korisnici where korisnik='$username' and lozinka = '$password'";
+
     // connect to db
     $handle = db_connect();
     if (!$handle)
@@ -80,10 +80,22 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="css/stylelogin.css">
-	
+<script src="js/status.js"></script>
     <body>
+    
 	<div class="container h-100">
+  <div id="status">
+                
+                <?php
+                if(isset($_SESSION['status'])){  
+                  echo $_SESSION['status'];
+                  unset($_SESSION['status']);
+                }
+                ?>
+              
+        </div>
 		<div class="d-flex justify-content-center h-100">
+   
 			<div class="user_card">
 				<div class="d-flex justify-content-center">
 					<div class="brand_logo_container">
