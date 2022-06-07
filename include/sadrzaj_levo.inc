@@ -1,4 +1,4 @@
-﻿<DIV id="calendar_box"><A class="title" href="kalendar.php">Događaji</A></DIV>
+﻿<DIV id="calendar_box"><A class="title" href="kalendar.php">Kalendar</A></DIV>
 
 <DIV id="kalendar" style="margin:10px 0 30px 0; border: 0px red; width:190px; height:200px;"> </DIV>
 

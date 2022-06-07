@@ -40,7 +40,7 @@
   </ul>
 </li>
 
-<li><a href="imenici.php">Imenici</a></li>
+<li><a href="https://asoftweb.a-asoft.com/Adresar" target="_blank">Imenik</a></li>
 
 <li><a href="#">Kalendari</a>
   <ul>

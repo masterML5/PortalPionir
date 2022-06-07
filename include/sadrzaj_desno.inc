@@ -11,22 +11,14 @@
 		</TR>
 
 		<TR class="bottom">
-			<TD style="font-size: 11px;" colSpan="2">izvor: <A href="http://www.kursna-lista.info/" target="_blank">www.kursna-lista.info</A></TD>
+			<TD style="font-size: 11px;" colSpan="2">izvor: <A href="http://www.kursna-lista.info/" target="_blank">www.kursna-lista.info</A>
+			</TD>
 		</TR>
 
 		<TR><TD> </TD></TR>	
 		
-		<TR class="blue top" align="center">
-			<TD colSpan="2">Vremenska prognoza</TD>
-		</TR>
-		<TR>
-			<TD>
-				<iframe id="iframe_navidiku_vreme" src="http://www.navidiku.rs/webtools/vreme//FFFFFF/EFEFEF/000000/FFFFFF/CFCFCF/15/2/YIXX0031/trenutno-vreme.html" frameborder="0"  scrolling="auto" height="200"  width="173"></iframe><div width="173"  ></div>
-			</TD>
-		</TR>
-		<TR class="bottom">
-			<TD style="font-size: 11px;" colSpan="2">izvor: <a id="navidiku_vreme" href="http://www.navidiku.rs/vremenska-prognoza/" target="_blank">Na vidiku</a></A></TD>
-		</TR>
+	
+	
 		
 		<TR><TD></TD></TR>	
 		

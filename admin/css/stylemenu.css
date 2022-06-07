@@ -159,3 +159,7 @@ span.vase_misli{
 .navbar .container img.navbar-brand{
 	margin-left: 10px;
 }
+.vremenska_prognoza_banner{
+	display: grid;
+	grid-template-columns: repeat(4, 3fr);
+}
