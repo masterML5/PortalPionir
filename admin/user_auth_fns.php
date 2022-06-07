@@ -7,18 +7,18 @@
   
 
     // connect to db
-    $handle = db_connect();
-    if (!$handle)
+    $con = db_connect();
+    if (!$con)
       return 0;
 
-	mysqli_set_charset ( $handle , 'utf8');
+	mysqli_set_charset ( $con , 'utf8');
 	  
-    $result = $handle->query("select * from korisnici where korisnik='$username' and lozinka = '$password'");
+    $result = mysqli_query($con, "select * from korisnici where korisnik='$username' and lozinka = '$password'");
     if (!$result)
     {
       return 0; 
     }
-    if ($result->num_rows>0)
+    if (mysqli_num_rows($result) > 0)
     {
       return 1;
     }
@@ -46,14 +46,14 @@
   // check user has permission to act on this story 
   {
     // connect to db
-    $handle = db_connect();
-    if (!$handle)
+    $con = db_connect();
+    if (!$con)
       return 0;
 
     if(!$_SESSION['auth_user'])
       return 0;
 
-    $result = $handle->query("select * from writer_permissions wp, stories s
+    $result = mysqli_query($con, "select * from writer_permissions wp, stories s
                               where wp.writer = '{$_SESSION['auth_user']}' and
                                   wp.page = s.page and
                                   s.id = $story
@@ -62,7 +62,7 @@
     {
       return 0;
     }
-    if ($result->num_rows>0)
+    if (mysqli_num_rows($result) > 0)
     {
       return 1;
     }

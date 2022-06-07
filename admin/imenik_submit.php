@@ -1,8 +1,8 @@
 ﻿<?php
 include_once('include_fns.php');
 
-  $handle = db_connect();
-  mysqli_set_charset ( $handle , 'utf8');
+  $con = db_connect();
+  mysqli_set_charset ( $con , 'utf8');
   
   $sifrad      = $_REQUEST['sifrad'];
   $prezime     = $_REQUEST['prezime'];
@@ -49,7 +49,7 @@ include_once('include_fns.php');
     $b = 2;
   }
 
-  $result = $handle->query($query);
+  $result = mysqli_query($con, $query);
 
 
   if (!$result) 

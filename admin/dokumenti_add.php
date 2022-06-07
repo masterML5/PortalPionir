@@ -134,7 +134,7 @@ require('calendar/tc_calendar.php');
                     <div class="col-md-12">
                         <div class="form-group">
 							<label for="tekst">Unesite tekst dokumenta</label>
-                            <textarea id="elm1" name="tekst" class="form-control" rows="12" cols="80" required></textarea>
+                            <textarea id="elm1" name="tekst" class="form-control" rows="12" cols="80" ></textarea>
                         </div>
                     </div>
 					<div class="col-md-6 form-opsti">

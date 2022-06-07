@@ -27,8 +27,8 @@ include_once('include_fns.php');
   }
   else 
   {
-		$handle = db_connect();
-		mysqli_set_charset ( $handle , 'utf8');
+		$con = db_connect();
+		mysqli_set_charset ( $con , 'utf8');
 		
 		$korisnik = get_korisnik_record($_SESSION['auth_user']);
 		

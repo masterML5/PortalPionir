@@ -1,7 +1,7 @@
 <?php
 include_once('include_fns.php');
   
-  $handle = db_connect();
+  $con = db_connect();
 
   $misao = $_REQUEST['misao'];
   
@@ -11,7 +11,7 @@ include_once('include_fns.php');
   {
     
     $query = "delete from misli where id = $misao";
-    $result = $handle->query($query);
+    $result = mysqli_query($con, $query);
 	echo "probaj 4";
   }
   header('Location: '.$_SERVER['HTTP_REFERER']);

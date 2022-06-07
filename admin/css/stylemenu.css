@@ -1,5 +1,13 @@
 body{
-    background-color: #60a3bc !important;
+    /* background-color: #60a3bc !important; */
+	/* background: url('../../img/background.jpg'); */
+	background: linear-gradient(to top, rgba(246, 65, 65, 0.1),rgba(96, 163, 188, 0.2)), url('../../img/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: rgba(96,163,188,0.2);
+
+
+	
 }
 .navmenubar {
 	margin: 0;
@@ -35,7 +43,7 @@ nav#lista-select{
 	width: 200px;
 	top: -60px;
 	border-radius: 50%;
-	background: #60a3bc;
+	/* background: #60a3bc; */
 	padding: 3px;
 	text-align: center;
 }

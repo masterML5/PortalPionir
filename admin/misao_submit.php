@@ -2,8 +2,8 @@
 include_once('include_fns.php');
 if(isset($_POST['btnSubmit'])){
 
-  $handle = db_connect();
-  mysqli_set_charset ( $handle , 'utf8');
+  $con = db_connect();
+  mysqli_set_charset ( $con , 'utf8');
   
   $misao = $_REQUEST['misao'];
   $naslov = $_REQUEST['naslov'];
@@ -56,7 +56,7 @@ else
   }
 
   
-  $result = $handle->query($query);
+  $result = mysqli_query($con, $query);
 
   if (!$result) 
   {

@@ -28,14 +28,24 @@ include_once('include_fns.php');
   }
   else 
   {
-    $handle = db_connect();
+    $con = db_connect();
 
-	mysqli_set_charset ( $handle , 'utf8');
-	
+	mysqli_set_charset ( $con , 'utf8');
+  $rightsQuery = 'select * from korisnici where korisnik = \''.
+  $_SESSION['auth_user'].'\'';
+  mysqli_real_escape_string($con, $rightsQuery);
+  $rightQueryRun = mysqli_query($con, $rightsQuery);
+  $fetchKorisnik = mysqli_fetch_assoc($rightQueryRun);
+  if($fetchKorisnik['nivo_ovlascenja'] == 1){
     $korisnik = get_korisnik_record($_SESSION['auth_user']);
-    $query = 'select * from dokumenti where uneo = \''.
-    $_SESSION['auth_user'].'\' order by datum desc, redosled';
-    $result = $handle->query($query);
+    $query = 'select * from dokumenti order by datum desc';
+  }else{
+    $korisnik = get_korisnik_record($_SESSION['auth_user']);
+    $query = 'select * from dokumenti where korisnik = \''.
+    $_SESSION['auth_user'].'\' order by datum desc';
+  }
+
+    $result = mysqli_query($con, $query);
 
 
     ?>
@@ -50,7 +60,7 @@ include_once('include_fns.php');
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
         <div class="container">
             <img src="../img/pionir-logo.png"class="navbar-brand" alt="">
-            <span class="vase_misli">Vaši dokumenti: <?php  echo $result->num_rows; ?></span>
+            <span class="vase_misli">Vaši dokumenti: <?php  echo mysqli_num_rows($result); ?></span>
             <a href="dokumenti_add.php"><button class="btn btn-warning dodaj">Dodaj novi dokument</button></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -87,10 +97,10 @@ include_once('include_fns.php');
 					<tbody>
           <tr>
           <?php
-    if ($result->num_rows) 
+    if (mysqli_num_rows($result) > 0) 
     {
       
-      while ($dokumenti = $result->fetch_assoc()) 
+      while ($dokumenti = mysqli_fetch_assoc($result)) 
       {
   
 ?>
@@ -102,7 +112,7 @@ include_once('include_fns.php');
 							</td>
             <td class="text-center">
             <?php
-              $dateString = $dokumenti['datum_unosa'];
+              $dateString = $dokumenti['datum'];
               $date = strtotime($dateString);
               echo date('d-M-Y', $date);
 

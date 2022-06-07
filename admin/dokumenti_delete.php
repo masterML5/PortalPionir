@@ -1,7 +1,7 @@
 <?php
 include_once('include_fns.php');
   
-  $handle = db_connect();
+  $con = db_connect();
 
   $dokument = $_REQUEST['dokument'];
   
@@ -10,7 +10,7 @@ include_once('include_fns.php');
   else
   {
     $query = "delete from dokumenti where id = $dokument";
-    $result = $handle->query($query);
+    $result = mysqli_query($con, $query);
   }
   header('Location: '.$_SERVER['HTTP_REFERER']);
 ?> 

@@ -1,7 +1,7 @@
 ﻿<?php
 include_once('include_fns.php');
 
-$con  = mysqli_connect('localhost','root','','alfaplam_portal');
+$con = db_connect();
 
 if(mysqli_connect_errno())
 {

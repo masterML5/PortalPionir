@@ -2,14 +2,14 @@
 
 function db_connect()
 {
-   $handle = new mysqli('localhost', 'root', '', 'alfaplam_portal'); 
-   mysqli_set_charset ( $handle , 'utf8');
+   $con =  mysqli_connect('localhost', 'root', '', 'alfaplam_portal'); 
+   mysqli_set_charset ( $con , 'utf8');
    
-   if (!$handle)
+   if (!$con)
    {
      return false;
    }
-   return $handle;
+   return $con;
 }
 
 function get_korisnik_record($username)

@@ -25,18 +25,23 @@ include_once('include_fns.php');
   }
   else 
   {
-    $handle = db_connect();
+    $con = db_connect();
 
-	mysqli_set_charset ( $handle , 'utf8');
-	
-    $korisnik = get_imenik_record($_SESSION['auth_user']);
+	mysqli_set_charset ( $con , 'utf8');
+  $rightsQuery = 'select * from korisnici where korisnik = \''.
+  $_SESSION['auth_user'].'\'';
+  $rightQueryRun = mysqli_query($con, $rightsQuery);
+  $fetchKorisnik = mysqli_fetch_assoc($rightQueryRun);
+  if($fetchKorisnik['nivo_ovlascenja'] == 1){
+    $korisnik = get_korisnik_record($_SESSION['auth_user']);
+    $query = $query = 'select * from imenik order by sifrad asc';
+  }else{
+    $korisnik = get_korisnik_record($_SESSION['auth_user']);
+    $query = 'select * from imenik where korisnik = \''.
+    $_SESSION['auth_user'].'\' order by sifrad asc';
+  }
 
-
-
-    $query = 'select * from imenik where uneo = \''.
-           $_SESSION['auth_user'].'\' order by datum_unosa desc';
-
-    $result = $handle->query($query);
+    $result = mysqli_query($con, $query);
 
   ?>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -91,10 +96,10 @@ include_once('include_fns.php');
 					<tbody>
           <tr>
           <?php
-    if ($result->num_rows) 
+    if (mysqli_num_rows($result) > 0) 
     {
       
-      while ($imenik = $result->fetch_assoc()) 
+      while ($imenik = mysqli_fetch_assoc($result)) 
       {
   
 ?>

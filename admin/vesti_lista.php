@@ -26,15 +26,23 @@ include_once('include_fns.php');
   }
   else 
   {
-    $handle = db_connect();
+    $con = db_connect();
 
-	mysqli_set_charset ( $handle , 'utf8');
-	
-    $korisnik = get_korisnik_record($_SESSION['auth_user']);
-    $query = 'select * from vesti where uneo = \''.
-    $_SESSION['auth_user'].'\' order by datum desc, redosled';
-$result = $handle->query($query);
-
+    mysqli_set_charset ( $con , 'utf8');
+    $rightsQuery = 'select * from korisnici where korisnik = \''.
+    $_SESSION['auth_user'].'\'';
+    $rightQueryRun = mysqli_query($con, $rightsQuery);
+    $fetchKorisnik = mysqli_fetch_assoc($rightQueryRun);
+    if($fetchKorisnik['nivo_ovlascenja'] == 1){
+      $korisnik = get_korisnik_record($_SESSION['auth_user']);
+      $query = $query = 'select * from vesti order by datum desc';
+    }else{
+      $korisnik = get_korisnik_record($_SESSION['auth_user']);
+      $query = 'select * from vesti where korisnik = \''.
+      $_SESSION['auth_user'].'\' order by datum desc';
+    }
+  
+      $result = mysqli_query($con, $query);
 
     ?>
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -89,7 +97,7 @@ $result = $handle->query($query);
     if ($result->num_rows) 
     {
       
-      while ($vesti = $result->fetch_assoc()) 
+      while ($vesti = mysqli_fetch_assoc($result)) 
       {
   
 ?>
@@ -101,7 +109,7 @@ $result = $handle->query($query);
 							</td>
             <td class="text-center">
             <?php
-              $dateString = $vesti['datum_unosa'];
+              $dateString = $vesti['datum'];
               $date = strtotime($dateString);
               echo date('d-M-Y', $date);
 
