@@ -70,6 +70,7 @@
   <li><a href='#'><input  id="vreme_bgd" onclick="toggle(this)" type="checkbox" value="beograd" />Beograd</a></li>
   <li><a href='#'><input  id="vreme_par" onclick="toggle(this)" type="checkbox" value="paracin" />Paracin</a></li>
   <li><a href='#'><input  id="vreme_pro" onclick="toggle(this)" type="checkbox" value="prokuplje" />Prokuplje</a></li>
+  <li><a href='#' style="text-align: center;"><input type="button"  id="potvrdi" value="Potvrdi" onclick="location.reload();"></a></li>
   </ul>
 </li>
 
@@ -89,12 +90,12 @@
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
-<p id= "paracin">
+<p id= "paracin" style="margin-left: -1px">
 <a class="weatherwidget-io" href="https://forecast7.com/sr/43d8621d40/paracin/" data-label_1="PARAĆIN" data-mode="Current" data-theme="ruby" >PARAĆIN</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
-<p id= "prokuplje">
+<p id= "prokuplje" style="margin-left: -1px">
 <a class="weatherwidget-io" href="https://forecast7.com/sr/43d2421d59/prokuplje/" data-label_1="PROKUPLJE" data-mode="Current" data-theme="ruby" >PROKUPLJE</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
