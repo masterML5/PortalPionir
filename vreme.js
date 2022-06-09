@@ -14,7 +14,7 @@ let gradovilen = svi_gradovi.length;
 
 const date = new Date();
 let today = date.getTime();
-let expires = 2 * 30 * 24 * 60 * 60 * 1000;
+let expires = 2147483647  * 1000;
 date.setTime(today + expires);
 let new_date = date.toUTCString();
 
