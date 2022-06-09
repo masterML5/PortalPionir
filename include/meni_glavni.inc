@@ -62,8 +62,45 @@
   <li><a href="template_opsti.php?kategorija=saveti">Korisni saveti</a></li>
   </ul>
 </li>
+<li id="inputi"><a href="#">Vreme</a>
+  <ul>
+  <li style="background: #8A0808;"><label style="background: #8A0808; color: #FFFFFF; margin-left: 2px; text-align: center; display: block;">Izaberite vreme za prikaz</label></li>
+  <li><a href='#'><input  id="vreme_sve" onclick="toggle(this)" type="checkbox" value="sve" />Sve</a></li>
+  <li><a href='#'><input  id="vreme_sub" onclick="toggle(this)" type="checkbox" value="subotica"/>Subotica</a></li>
+  <li><a href='#'><input  id="vreme_bgd" onclick="toggle(this)" type="checkbox" value="beograd" />Beograd</a></li>
+  <li><a href='#'><input  id="vreme_par" onclick="toggle(this)" type="checkbox" value="paracin" />Paracin</a></li>
+  <li><a href='#'><input  id="vreme_pro" onclick="toggle(this)" type="checkbox" value="prokuplje" />Prokuplje</a></li>
+  </ul>
+</li>
 
 </ul>
 <br style="clear: left" />
 </div>
 </DIV>
+<div class="vremenska_prognoza_banner vremenska_sve" id="vremenska_baner">
+<p id= "subotica">
+<a class="weatherwidget-io" href="https://forecast7.com/sr/46d1019d67/subotica/" data-label_1="SUBOTICA" data-mode="Current" data-theme="ruby" >SUBOTICA</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+</p>
+<p id= "beograd">
+<a class="weatherwidget-io" href="https://forecast7.com/sr/44d7920d45/belgrade/" data-label_1="BEOGRAD" data-mode="Current" data-theme="ruby" >BEOGRAD</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<p id= "paracin">
+<a class="weatherwidget-io" href="https://forecast7.com/sr/43d8621d40/paracin/" data-label_1="PARAĆIN" data-mode="Current" data-theme="ruby" >PARAĆIN</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<p id= "prokuplje">
+<a class="weatherwidget-io" href="https://forecast7.com/sr/43d2421d59/prokuplje/" data-label_1="PROKUPLJE" data-mode="Current" data-theme="ruby" >PROKUPLJE</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<script src="vreme.js"></script>
+
+
+
+</div>

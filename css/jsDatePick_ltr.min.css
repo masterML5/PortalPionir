@@ -17,8 +17,8 @@
 .JsDatePickBox .boxMain{float:left;background-color:#fff;margin:0;padding:15px 0 5px 0;}
 .JsDatePickBox .boxMainStripped{background:#fff;border:none;}
 .JsDatePickBox .tooltip{height:12px;line-height:11px;overflow:hidden;font-size:10px;color:#666;text-align:left;padding:0;margin:2px 0 2px 0;}
-.JsDatePickBox .weekDaysRow{height:12px;overflow:hidden;line-height:11px;font-size:10px;color:#666;text-align:center;padding:0;margin:1px 0 0 0;}
-.JsDatePickBox .weekDaysRow .weekDay{float:left;height:14px;overflow:hidden;width:24px;margin:0 4px 0 0;padding:0;}
+.JsDatePickBox .weekDaysRow{height:12px;overflow:hidden;line-height:11px;font-size:10px;text-align:center;padding:0;margin:1px 0 0 0; font-weight: bold; color: #f40f0f; text-decoration: underline;}
+.JsDatePickBox .weekDaysRow .weekDay{float:left;height:14px;overflow:hidden;width:24px;margin:0 2px 0 0;padding:0;}
 .JsDatePickBox .boxMainInner{background:#fff;width:190px;float:left;margin:5px 0 0 0;padding:0;}
 .JsDatePickBox .boxMainCellsContainer{background-color:#fff;margin:0;padding:0;}
 .JsDatePickBox .boxMainInner .controlsBar{overflow:hidden;height:20px;position:relative;}
