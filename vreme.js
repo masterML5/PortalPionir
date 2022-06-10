@@ -4,6 +4,7 @@ let subotica = document.getElementById('vreme_sub');
 let beograd = document.getElementById('vreme_bgd');
 let paracin = document.getElementById('vreme_par');
 let prokuplje = document.getElementById('vreme_pro');
+document.cookie = `vreme=sve;`;
 
 let svi_gradovi = ['subotica', 'beograd', 'paracin', 'prokuplje'];
 let gradovilen = svi_gradovi.length;
@@ -50,13 +51,19 @@ function toggle(source) {
 }
 
 }
-var value = 'vreme'
-var match = document.cookie.match(new RegExp('(^| )' + value + '=([^;]+)'));
+let value = 'vreme'
+let match = document.cookie.match(new RegExp('(^| )' + value + '=([^;]+)'));
+
+
+
+
+
 
 const kuki = match[0].slice(6);
 let imena = kuki.split("-");
 imena = imena.filter(Boolean);
 let brojvremena = imena.length;
+
 if(imena[0] == 'sve'){
     brojvremena = 4;
 }
@@ -76,6 +83,7 @@ let diflen = difference.length;
 
 let ptags = document.getElementsByTagName('p');
 const ptagslen = ptags.length;
+
 
 if(imena[0] == 'sve'){
     for(let i = 0; i < gradovilen; i++){
