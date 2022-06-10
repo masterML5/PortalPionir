@@ -78,7 +78,7 @@
 <br style="clear: left" />
 </div>
 </DIV>
-<div class="vremenska_prognoza_banner vremenska_sve" id="vremenska_baner">
+<div class="vremenska_prognoza_banner vremenska_sve" id="vremenska_baner" style="display:grid; grid-template-columns:repeat(4, 3fr);">
 <p id= "subotica">
 <a class="weatherwidget-io" href="https://forecast7.com/sr/46d1019d67/subotica/" data-label_1="SUBOTICA" data-mode="Current" data-theme="ruby" >SUBOTICA</a>
 <script>
@@ -90,18 +90,20 @@
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
+</p>
 <p id= "paracin" style="margin-left: -1px">
 <a class="weatherwidget-io" href="https://forecast7.com/sr/43d8621d40/paracin/" data-label_1="PARAĆIN" data-mode="Current" data-theme="ruby" >PARAĆIN</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
+</p>
 <p id= "prokuplje" style="margin-left: -1px">
 <a class="weatherwidget-io" href="https://forecast7.com/sr/43d2421d59/prokuplje/" data-label_1="PROKUPLJE" data-mode="Current" data-theme="ruby" >PROKUPLJE</a>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
 <script src="vreme.js"></script>
-
+</p>
 
 
 </div>
