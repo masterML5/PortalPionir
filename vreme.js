@@ -107,12 +107,12 @@ if(imena[0] == 'sve'){
 
 
 
-for(let l = 0; l < brojvremena; l++){
-    for(let m = 0; m < ptagslen; m++){
+for(let i = 0; i < brojvremena; i++){
+    for(let j = 0; j < ptagslen; j++){
  
-   if(imena[l] == ptags[m].id.toLowerCase()){
+   if(imena[i] == ptags[j].id.toLowerCase()){
      
-        ptags[m].style.display = 'block';
+        ptags[j].style.display = 'block';
    }
 }
 }
