@@ -1,7 +1,7 @@
 ﻿<DIV id="smoothmenu1" class="ddsmoothmenu">
 <ul>
 
-<li><a href="#">Alfa-Plam</a>
+<li><a href="#">Pionir</a>
   <ul>
   <li><a href="template_opsti.php?kategorija=misija">Misija i vizija</a></li>
   <li><a href="template_opsti.php?kategorija=podaci">Podaci</a></li>
