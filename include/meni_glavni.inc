@@ -48,7 +48,7 @@
   </ul>
 </li>
 
-<li><a href="#">Servisne informacije</a>
+<li><a href="#">Informacije</a>
   <ul>
 	  <li><a href="template_opsti.php?kategorija=jelovnik">Jelovnik</a></li>  
 	  <li><a href="#">Dežurstvo vozila za hitne slučajeve</a></li>  	  
@@ -60,6 +60,15 @@
   <ul>
   <li><a href="template_misli.php">Misli</a></li>
   <li><a href="template_opsti.php?kategorija=saveti">Korisni saveti</a></li>
+  </ul>
+</li>
+<li><a href="#">Članovi grupe</a>
+  <ul>
+  <li><a href="https://www.alfaplam.rs/" target="_blank">Alfa-Plam</a></li>
+  <li><a href="http://www.a-tipoplastika.com" target="_blank">Tipoplastika</a></li>
+  <li><a href="https://amasis.ls.rs/rs/" target="_blank">Amasis</a></li>
+  <li><a href="https://ahoteli.com/" target="_blank">A hoteli</a></li>
+
   </ul>
 </li>
 <li id="inputi"><a href="#">Vreme</a>
