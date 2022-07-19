@@ -8,10 +8,9 @@
 	  <LI><A href="template_info.php?kategorija=korporativna">Korporativna obaveštenja</A></LI>
 	  <LI><A href="template_opsti.php?kategorija=orgseme">Organizacione šeme</A></LI>
 	  <LI><A href="template_opsti.php?kategorija=obrasci">Obrasci</A></LI>
+	  <LI><A href="upload_login.php">Razmena fajlova</A></LI>
+
 	</UL>
 </DIV>
-<!--
-<DIV id="ads">
-	<DIV><A href="http://10.1.4.15" target="_blank"><IMG alt="" src="img/pic_ads_1.gif"></A></DIV>
-</DIV>-->
+
 </DIV>

@@ -1,0 +1,75 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.file-upload input[type='file'] {
+  display: none;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+body {
+  background: #00B4DB;
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+  background: linear-gradient(to right, #0083B0, #00B4DB);
+  height: 100vh;
+}
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.custom-file-label.rounded-pill {
+  border-radius: 50rem;
+}
+
+.custom-file-label.rounded-pill::after {
+  border-radius: 0 50rem 50rem 0;
+}
+h6.info{
+  color: #dc3545 !important;
+}
+.custom-file-input:lang(en)~.custom-file-label::after{
+  content: "Izaberi" !important;
+}
+#infoArea{
+  text-align: center;
+}
+#uploadBtn{
+  margin: 0 auto;
+  width: 120px;
+  text-align: center;
+}
+.divForUploadBtn{
+  text-align: center;
+  margin-top: 20px;
+}
+#warning{
+  color: #dc3545;
+  margin-top: 10px;
+}
+a{
+  color: white;
+}
+.email{
+  text-align: center;
+  color: white;
+  display: grid;
+}
+.email > a > i{
+  font-size: 200px;
+  margin-left: 10px;
+}
+.email > a:hover{
+  color: #dc3545;
+}
