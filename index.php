@@ -48,7 +48,6 @@
 </DIV><!-- content | end -->
 <DIV id="footer">
 
-<P>Razvoj: <a href="mailto:zoran.kostic@alfaplam.rs?Subject=Interni%20portal" target="_top">Zoran Kostić</A></P>
 </DIV>
 </DIV>
 </DIV>

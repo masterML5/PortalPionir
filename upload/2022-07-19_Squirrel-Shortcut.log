@@ -1,7 +1,0 @@
-﻿[11/07/22 07:13:13] info: Program: Starting Squirrel Updater: --createShortcut=MongoDBCompass.exe
-[11/07/22 07:13:13] info: ApplyReleasesImpl: About to create shortcuts for MongoDBCompass.exe, rootAppDir C:\Users\Milos Jelic\AppData\Local\MongoDBCompass
-[11/07/22 07:13:13] info: ApplyReleasesImpl: Creating shortcut for MongoDBCompass.exe => C:\Users\Milos Jelic\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MongoDB Inc\MongoDBCompass.lnk
-[11/07/22 07:13:13] info: ApplyReleasesImpl: About to save shortcut: C:\Users\Milos Jelic\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\MongoDB Inc\MongoDBCompass.lnk (target C:\Users\Milos Jelic\AppData\Local\MongoDBCompass\MongoDBCompass.exe, workingDir C:\Users\Milos Jelic\AppData\Local\MongoDBCompass\app-1.32.2, args , toastActivatorCSLID ad99d1f2-2b3e-5e06-a073-40f92f9ed026)
-[11/07/22 07:13:13] info: ApplyReleasesImpl: Creating shortcut for MongoDBCompass.exe => C:\Users\Milos Jelic\Desktop\MongoDBCompass.lnk
-[11/07/22 07:13:13] info: ApplyReleasesImpl: About to save shortcut: C:\Users\Milos Jelic\Desktop\MongoDBCompass.lnk (target C:\Users\Milos Jelic\AppData\Local\MongoDBCompass\MongoDBCompass.exe, workingDir C:\Users\Milos Jelic\AppData\Local\MongoDBCompass\app-1.32.2, args , toastActivatorCSLID ad99d1f2-2b3e-5e06-a073-40f92f9ed026)
-[11/07/22 07:13:13] info: Program: Finished Squirrel Updater

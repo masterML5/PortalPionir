@@ -39,7 +39,7 @@
 </DIV><!-- content | end -->
 <DIV id="footer">
 
-<P>Razvoj: <A href="#" target="_blank">Zoran Kostić</A></P>
+
 </DIV>
 </DIV>
 </DIV>
