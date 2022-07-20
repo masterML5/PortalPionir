@@ -41,7 +41,7 @@ include_once('include_fns.php');
     $query = 'select * from dokumenti order by datum desc';
   }else{
     $korisnik = get_korisnik_record($_SESSION['auth_user']);
-    $query = 'select * from dokumenti where korisnik = \''.
+    $query = 'select * from dokumenti where uneo = \''.
     $_SESSION['auth_user'].'\' order by datum desc';
   }
 

@@ -42,7 +42,10 @@
           <label for="fileUpload" class="file-upload btn btn-primary btn-block rounded-pill shadow"><i class="fa fa-upload mr-2"></i>Izaberite fajl
                         <input id="fileUpload" name="fileToUpload"  type="file" required>
                     </label>
-                    <p id="infoArea"></p>  
+                    <div class="filenameCancel">
+
+                      <p id="infoArea"> </p><i class='fa fa-times' aria-hidden='true' id='cancelinput'></i>  
+                    </div>
                     <div class="divForUploadBtn">
 
                       <button type="submit" class="btn btn-danger rounded-pill shadow" id="uploadBtn">Upload</button>

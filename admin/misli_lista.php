@@ -35,7 +35,7 @@ include_once('include_fns.php');
   }else{
     $korisnik = get_korisnik_record($_SESSION['auth_user']);
     $query = 'select * from misli where korisnik = \''.
-    $_SESSION['auth_user'].'\' order by datum desc';
+    $_SESSION['auth_user'].'\' order by datum_unosa desc';
   }
 
     $result = mysqli_query($con, $query);
@@ -105,7 +105,7 @@ include_once('include_fns.php');
 							</td>
 							<td class="text-center">
                 <?php
-								  $dateString = $misli['datum'];
+								  $dateString = $misli['datum_unosa'];
                   $date = strtotime($dateString);
                   echo date('d-M-Y', $date);
           

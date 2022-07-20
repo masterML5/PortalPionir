@@ -37,7 +37,7 @@ include_once('include_fns.php');
     $query = $query = 'select * from imenik order by sifrad asc';
   }else{
     $korisnik = get_korisnik_record($_SESSION['auth_user']);
-    $query = 'select * from imenik where korisnik = \''.
+    $query = 'select * from imenik where uneo = \''.
     $_SESSION['auth_user'].'\' order by sifrad asc';
   }
 

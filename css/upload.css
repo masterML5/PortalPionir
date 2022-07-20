@@ -44,6 +44,7 @@ h6.info{
 }
 #infoArea{
   text-align: center;
+  margin-left: 15px;
 }
 #uploadBtn{
   margin: 0 auto;
@@ -67,9 +68,34 @@ a{
   display: grid;
 }
 .email > a > i{
-  font-size: 200px;
+  font-size: 150px;
   margin-left: 10px;
+}
+.copy > i {
+  font-size: 150px;
+  padding-top: 15px;
+}
+.copy > i:hover{
+  color: #dc3545;
+  cursor: pointer;
 }
 .email > a:hover{
   color: #dc3545;
+}
+#cancelinput{
+  display: none;
+}
+.filenameCancel{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+}
+.filenameCancel i {
+  margin-right: 10px;
+  text-align: right;
+}
+#infoCopy{
+  text-align: center;
+  color: white;
+  text-decoration: underline;
 }
