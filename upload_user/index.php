@@ -25,7 +25,6 @@ elseif($_SESSION['privileges'] == 1){
 <section>
 <a href="../index.php"><button class="btn btn-warning povratakNaPocetnu">Povratak na početnu stranicu</button></a>
   <div class="container p-5">
-    <!-- For demo purpose -->
     <div class="row mb-5 text-center text-white">
       <div class="col-lg-10 mx-auto">
         <h1 class="display-4">Prebacivanje fajla na web server</h1>
@@ -34,14 +33,12 @@ elseif($_SESSION['privileges'] == 1){
       Ukoliko je fajl veći od 2,5 GB obratite se Čedi (lok. 734)</p>
       </div>
     </div>
-    <!-- End -->
 
 
     <div class="row">
       <div class="col-lg-5 mx-auto">
         <div class="p-5 bg-white shadow rounded-lg"><img src="https://bootstrapious.com/i/snippets/sn-file-upload/img.png" alt="" width="200" class="d-block mx-auto mb-4 rounded-pill">
 
-          <!-- Default bootstrap file upload-->
 
           <h6 class="text-center mb-4 info">
           Zabranjeno je prebacivanje audio i video materijala koji nije u vlasništvu Alco grupacije
