@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+<?php
+session_start();
+if($_SESSION['loggedin'] != true){
+    header("Location: ../login.php");
+ }
+elseif($_SESSION['privileges'] == 1){
+    header("Location: ../upload_admin/index.php");
+ }
+
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,6 +23,7 @@
 </head>
 <body>
 <section>
+<a href="../index.php"><button class="btn btn-warning povratakNaPocetnu">Povratak na početnu stranicu</button></a>
   <div class="container p-5">
     <!-- For demo purpose -->
     <div class="row mb-5 text-center text-white">

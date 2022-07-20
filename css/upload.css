@@ -99,3 +99,10 @@ a{
   color: white;
   text-decoration: underline;
 }
+.povratakNaPocetnu{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.col-lg-10.mx-auto{
+  margin-top: -15px;
+}
